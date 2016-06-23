@@ -13,8 +13,17 @@ for bb in bbset:
     
     tel = {'jack': 4098, 'sape': 4139}
            tel['guido'] = 4127
->>> tel
 
+
+
+class bbone:
+    def createBB(self, bbname):
+        
+        self.bb = bbname
+    def
+    def displayInfo(self):
+        print
+    
 
 # sample finely around the parameters
 
@@ -27,5 +36,9 @@ for bb in bbset:
 
 # make combinations
 
-
-
+for bb in bbset:
+    for i in Aset:
+        for j in Bset:
+            for k in Cset:
+                for l in Zset:
+                    print bb + "_" + i + "_" + j + "_" + k + "_" + l
