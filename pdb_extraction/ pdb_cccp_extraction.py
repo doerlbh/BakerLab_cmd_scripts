@@ -45,9 +45,9 @@ Bran = [x*0.5 for x in range(2*(Bmin-3), 2*(Bmax+3)+1)]
 Cran = range(Cmin-10, Cmax+11)
 Cran = [x for x in Cran if x%2==0]
 
-print "Aran: " + Aran
-print "Bran: " + Bran
-print "Cran: " + Cran
+print Aran
+print Bran
+print Cran
 
 # make combinations
 
