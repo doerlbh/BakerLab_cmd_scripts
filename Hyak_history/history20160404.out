@@ -1,0 +1,197 @@
+    1  nano ~/.bashrc
+    2  cat ~/.bashrc
+    3  1node
+    4  nano ~/.bashrc
+    5  cat ~/.bashrc
+    6  1node
+    7  cat ~/.bashrc
+    8  source ~/.bashrc
+    9  1node
+   10  cd /gscratch/stf
+   11  16node
+   12  1node
+   13  cd /gscratch/stf
+   14  ls
+   15  ls /gscratch/stf/zibochen
+   16  ls /gscratch/stf/
+   17  ls /gscratch/baker/
+   18  ls
+   19  pwd
+   20  cd /gscratch/stf
+   21  mkdir sunnylin
+   22  ls
+   23  cd zibochen/
+   24  ls
+   25  cd ../sun
+   26  cd ../sunnylin/
+   27  ls
+   28  cd ../
+   29  cd yifei/
+   30  ls
+   31  cd ../
+   32  cd ..
+   33  cd baker/
+   34  ls
+   35  cd zibochen/
+   36  ls
+   37  cd scripts/
+   38  ls
+   39  cd ..
+   40  cd wormhole/
+   41  ls
+   42  cd ..
+   43  cd..
+   44  cd /gscratch/baker/
+   45  cd zibochen/
+   46  cd scripts/xml
+   47  cd scripts/xml_and_flags/
+   48  ls
+   49  ls -ltrh
+   50  cat wormhole_packing_HBNet.xml 
+   51  cd /gscratch/stf/sunnylin/
+   52  ls
+   53  cd ../zibochen/
+   54  ls
+   55  more flatland_setup_design.sh 
+   56  more hyak_process_wormhole_submit.sh 
+   57  cd ../
+   58  cd sunnylin/
+   59  history >> history20160404.out
+    1  nano ~/.bashrc
+    2  cat ~/.bashrc
+    3  1node
+    4  nano ~/.bashrc
+    5  cat ~/.bashrc
+    6  1node
+    7  cat ~/.bashrc
+    8  source ~/.bashrc
+    9  1node
+   10  cd /gscratch/stf
+   11  16node
+   12  1node
+   13  cd /gscratch/stf
+   14  ls
+   15  ls /gscratch/stf/zibochen
+   16  ls /gscratch/stf/
+   17  ls /gscratch/baker/
+   18  ls
+   19  pwd
+   20  cd /gscratch/stf
+   21  mkdir sunnylin
+   22  ls
+   23  cd zibochen/
+   24  ls
+   25  cd ../sun
+   26  cd ../sunnylin/
+   27  ls
+   28  cd ../
+   29  cd yifei/
+   30  ls
+   31  cd ../
+   32  cd ..
+   33  cd baker/
+   34  ls
+   35  cd zibochen/
+   36  ls
+   37  cd scripts/
+   38  ls
+   39  cd ..
+   40  cd wormhole/
+   41  ls
+   42  cd ..
+   43  cd..
+   44  cd /gscratch/baker/
+   45  cd zibochen/
+   46  cd scripts/xml
+   47  cd scripts/xml_and_flags/
+   48  ls
+   49  ls -ltrh
+   50  cat wormhole_packing_HBNet.xml 
+   51  cd /gscratch/stf/sunnylin/
+   52  ls
+   53  cd ../zibochen/
+   54  ls
+   55  more flatland_setup_design.sh 
+   56  more hyak_process_wormhole_submit.sh 
+   57  cd ../
+   58  cd sunnylin/
+   59  history >> history20160404.out
+   60  ls
+   61  cat history20160404.out 
+   62  cd ../zibo
+   63  cd ../zibochen/
+   64  ls
+   65  cat flatland_setup_design.sh 
+   66  cd ../
+   67  1node
+   68  cd /gscratch/stf/sunnylin/
+   69  ls
+   70  cat silent.list 
+   71  1node 
+   72  pwd
+   73  ls
+   74  j=1;for i in *submit*;do let j=j+1;if (( $j > 100));then j=1;sleep 10;echo sleeping;else qsub -q bf $i;fi;done
+   75  vi ~/.bashrc 
+   76  source ~/.bashrc 
+   77  q
+   78  qs
+   79  q
+   80  qs
+   81  q
+   82  qs
+   83  more ../usa
+   84  more ../usage_report.txt 
+   85  ls
+   86  LS
+   87  ls -ltrh
+   88  LS
+   89  ls
+   90  LS
+   91  cd joblogs/
+   92  LS
+   93  q
+   94  b
+   95  LS
+   96  ls
+   97  b
+   98  cd ../
+   99  b
+  100  cd /gscratch/stf/sunnylin/
+  101  s
+  102  ls
+  103  cd joblogs/
+  104  ls
+  105  s
+  106  cd
+  107  o
+  108  l
+  109  ls
+  110  LS
+  111  b
+  112  Sl
+  113  LS
+  114  cd joblogs/
+  115  LS
+  116  b
+  117  LS
+  118  ls
+  119  LS
+  120  more flatland_submit319
+  121  q
+  122  qs
+  123  more run.sh 
+  124  LS
+  125  q
+  126  cd joblogs/
+  127  ls
+  128  LS
+  129  b
+  130  cd stf/zibochen/
+  131  ;s
+  132  ls
+  133  LS
+  134  cd 38_res_sampling/
+  135  find . -name "*pdb"
+  136  b
+  137  cd /gscratch/stf/sunnylin/
+  138  history >> history20160404.out 

@@ -1,0 +1,52 @@
+    1  cd /gscratch/stf/sunnylin/
+    2* cat /gscratch/stf/zibochen/tem
+    3  source ~/.bashrc
+    4  history
+    5  cd 160624_flatland_finer_sampling/2/1/116
+    6  psu --stats
+    7  cat ../../../run.sh 
+    8  /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -missing_density_to_jump true
+    9  #/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -missing_density_to_jump true -s 
+   10  cd 
+   11  o
+   12  cd 2/1/116/1/
+   13  ls
+   14  /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -missing_density_to_jump true -s P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.pdb -parser:script_vars resfile=P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res 
+   15  /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -missing_density_to_jump true -s P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.pdb -parser:script_vars resfile=P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res -parser:protocol /gscratch/baker/zibochen/scripts/xml_and_flags/hyak_flatland_asym_hbnet.xml 
+   16  SL
+   17  more P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res 
+   18  cat P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res 
+   19  cp P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res test.txt
+   20  cat test.txt 
+   21  grep -v '^        ' EmptyStartinglines.txt >NoEmptyStartingLines.txt
+   22  grep -v ' ' test.txt >NoEmptest.txt
+   23  cat NoEmpt
+   24  cat NoEmptest.txt 
+   25  grep ^' A' test.txt >NoEmptest.txt
+   26  cat NoEmptest.txt 
+   27  sed '/^ / d'
+   28* sed '/^ / d' P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjace
+   29  cd ../../../
+   30  cd ..
+   31  more dir_list 
+   32  cp dir_list rm_reshead
+   33  for i in `cat rm_reshead`; do cd $i; sed -i '/^ / d' *.res; done & 
+   34  psu --stats
+   35  cd 2/1/1/116/1
+   36  cd 2/1/116/1
+   37  ls
+   38  cat P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res 
+   39  history
+   40  qa
+   41   /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -missing_density_to_jump true -s P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.pdb -parser:script_vars resfile=P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res -parser:protocol /gscratch/baker/zibochen/scripts/xml_and_flags/hyak_flatland_asym_hbnet.xml 
+   42  ls
+   43  cd ..
+   44  for i in `cat rm_reshead`; do cd $i; rm done; done & 
+   45  for i in `cat ../../../rm_reshead`; do cd $i; rm done; done & 
+   46  b
+   47  ls
+   48  LS
+   49  more do_HBNet
+   50  psu --stats
+   51  cd ..
+   52  history > history_160628_pm_hyak

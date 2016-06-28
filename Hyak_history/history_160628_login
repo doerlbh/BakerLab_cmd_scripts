@@ -1,0 +1,910 @@
+    1  nano ~/.bashrc
+    2  cat ~/.bashrc
+    3  1node
+    4  nano ~/.bashrc
+    5  cat ~/.bashrc
+    6  1node
+    7  cat ~/.bashrc
+    8  source ~/.bashrc
+    9  1node
+   10  cd /gscratch/stf
+   11  16node
+   12  1node
+   13  cd /gscratch/stf
+   14  ls
+   15  ls /gscratch/stf/zibochen
+   16  ls /gscratch/stf/
+   17  ls /gscratch/baker/
+   18  ls
+   19  pwd
+   20  cd /gscratch/stf
+   21  mkdir sunnylin
+   22  ls
+   23  cd zibochen/
+   24  ls
+   25  cd ../sun
+   26  cd ../sunnylin/
+   27  ls
+   28  cd ../
+   29  cd yifei/
+   30  ls
+   31  cd ../
+   32  cd ..
+   33  cd baker/
+   34  ls
+   35  cd zibochen/
+   36  ls
+   37  cd scripts/
+   38  ls
+   39  cd ..
+   40  cd wormhole/
+   41  ls
+   42  cd ..
+   43  cd..
+   44  cd /gscratch/baker/
+   45  cd zibochen/
+   46  cd scripts/xml
+   47  cd scripts/xml_and_flags/
+   48  ls
+   49  ls -ltrh
+   50  cat wormhole_packing_HBNet.xml 
+   51  cd /gscratch/stf/sunnylin/
+   52  ls
+   53  cd ../zibochen/
+   54  ls
+   55  more flatland_setup_design.sh 
+   56  more hyak_process_wormhole_submit.sh 
+   57  cd ../
+   58  cd sunnylin/
+   59  history >> history20160404.out
+   60  ls
+   61  cat history20160404.out 
+   62  cd ../zibo
+   63  cd ../zibochen/
+   64  ls
+   65  cat flatland_setup_design.sh 
+   66  cd ../
+   67  1node
+   68  ls
+   69  pwd
+   70  cd /gscratch/stf/zibochen/
+   71  ls
+   72  pwd
+   73  cd /gscratch/baker/zibochen/scripts/xml_and_flags/
+   74  ls
+   75  LS
+   76  ls
+   77  pwd
+   78  LS
+   79  ls
+   80  cd /gscratch/stf/sunnylin/
+   81  ls
+   82  ls -ltrh
+   83  cp ../zibochen/silent_list .
+   84  cp ../zibochen/*.sh .
+   85  ls
+   86  more flatland_setup_design.sh 
+   87  ls
+   88  sh flatland_setup_design.sh 320 &
+   89  ls
+   90  ls -ltrh
+   91  rm silent.list
+   92  vi flatland_setup_design.sh
+   93  sh flatland_setup_design.sh 320 &
+   94  ls -ltrh
+   95  LS
+   96  ls -ltrh
+   97  ls
+   98  more cmd_path0155
+   99  ls
+  100  more flatland_setup_design.sh 
+  101  cp ../zibochen/hyak_process_wormhole_submit.sh .
+  102  sh hyak_process_wormhole_submit.sh 1 1 flatland 16 168
+  103  ls
+  104  more flatland_submit136
+  105  ls
+  106  cp ../zibochen/hyak_process_wormhole_submit.sh .
+  107  vi hyak_process_wormhole_submit.sh 
+  108  ls
+  109  nano hyak_process_wormhole_submit.sh 
+  110  vi hyak_process_wormhole_submit.sh 
+  111  cp ../zibochen/hyak_process_wormhole_submit.sh .
+  112  sh hyak_process_wormhole_submit.sh 1 1 flatland 16 168
+  113  ls
+  114  ls *submit* w|wc
+  115  mkdir joblogs
+  116  cd joblogs/
+  117  ls
+  118  pwd
+  119  cd ..
+  120  ls
+  121  ls -ltrh
+  122  more flatland_submit319
+  123  ls joblogs/
+  124  ls
+  125  more cmd_path0271
+  126  cd /gscratch/stf/zibochen/38_res_sampling/2start/30.5778_3.38536_77.0103/15
+  127  ls
+  128  more /gscratch/stf/sunnylin/run.sh
+  129  sh /gscratch/stf/sunnylin/run.sh
+  130  ls
+  131  cd /gscratch/stf/sunnylin/
+  132  ls
+  133  ls -ltrh
+  134  j=1;for i in *submit*;do let j=j+1;if (( $j > 100));then j=1;sleep 10;echo sleeping;else qsub -q bf $i;fi;done
+  135  exit
+  136  cd /gscratch/stf/sunnylin/
+  137  ls
+  138  cat silent.list 
+  139  1node 
+  140  pwd
+  141  ls
+  142  j=1;for i in *submit*;do let j=j+1;if (( $j > 100));then j=1;sleep 10;echo sleeping;else qsub -q bf $i;fi;done
+  143  vi ~/.bashrc 
+  144  source ~/.bashrc 
+  145  q
+  146  qs
+  147  q
+  148  qs
+  149  q
+  150  qs
+  151  more ../usa
+  152  more ../usage_report.txt 
+  153  ls
+  154  LS
+  155  ls -ltrh
+  156  LS
+  157  ls
+  158  LS
+  159  cd joblogs/
+  160  LS
+  161  q
+  162  b
+  163  LS
+  164  ls
+  165  b
+  166  cd ../
+  167  b
+  168  cd /gscratch/stf/sunnylin/
+  169  s
+  170  ls
+  171  cd joblogs/
+  172  ls
+  173  s
+  174  cd
+  175  o
+  176  l
+  177  ls
+  178  LS
+  179  b
+  180  Sl
+  181  LS
+  182  cd joblogs/
+  183  LS
+  184  b
+  185  LS
+  186  ls
+  187  LS
+  188  more flatland_submit319
+  189  q
+  190  qs
+  191  more run.sh 
+  192  LS
+  193  q
+  194  cd joblogs/
+  195  ls
+  196  LS
+  197  b
+  198  cd stf/zibochen/
+  199  ;s
+  200  ls
+  201  LS
+  202  cd 38_res_sampling/
+  203  find . -name "*pdb"
+  204  b
+  205  cd /gscratch/stf/sunnylin/
+  206  history >> history20160404.out 
+  207  cat history20160404.out 
+  208  q
+  209  qs
+  210  q
+  211  1node
+  212  cd /gscratch/baker/zibochen/
+  213  ls
+  214  cd /gscratch/stf/zibochen/
+  215  ls
+  216  cd 38_res_sampling/
+  217  ls
+  218  cd ../tilted_helix_sample/
+  219  ls
+  220  1node
+  221  cd /gscratch/stf/zibochen/
+  222  LS
+  223  cd tilted_helix_sample/
+  224  ls
+  225  cd 35_35/
+  226  ls
+  227  cd 1start
+  228  ls
+  229  cd 30.5778_3_262.073/
+  230  ls
+  231  cd 1
+  232  ls
+  233  LS
+  234  cd straight_param
+  235  cat straight_param
+  236  cd run.cmplx_cmd .
+  237  cd run.cmplx_cmd
+  238  cat cmplx_log 
+  239  cd /gscratch/stf/zibochen/
+  240  ls
+  241  1node
+  242  q
+  243  qs
+  244  usage report
+  245  top
+  246  pwd
+  247  cd /gscratch/stf/zibochen/
+  248  ls
+  249  cd 38_res_sampling/
+  250  ls
+  251  cd 1start/
+  252  ls
+  253  cd 5.02222_11.3356_208.125/
+  254  l
+  255  ls
+  256  LS
+  257  cd 1
+  258  ls
+  259  cat done
+  260  LS
+  261  cat straight_final 
+  262  cd /gscratch/dimaio/zibochen/wormhole/finer/38_res_sampling/1start/5.02222_11.3356_208.125/1
+  263  ls
+  264  1node
+  265  pwd
+  266  top
+  267  cd /gscratch/
+  268  ls
+  269  LS
+  270  cd stf/
+  271  LS
+  272  cd zibochen/
+  273  ls
+  274  find *pdb
+  275  find *.pdb
+  276  q
+  277  qs
+  278  1node
+  279  q
+  280  cd /gscratch/stf/zibochen/
+  281  find . -iname "*.pdb"
+  282  ls
+  283  pwd
+  284  exit
+  285  1node
+  286  nano .bashrc 
+  287  vi .bashrc 
+  288  q
+  289  ls
+  290  cd /gscratch/stf/sunnylin/
+  291  ls
+  292  rsub run.sh 
+  293  q
+  294  qs
+  295  cd ../zibochen/
+  296  ls
+  297  cd tilted_helix_sample/
+  298  ls
+  299  find . -name *.pdb
+  300  history > history20160411
+  301  cd /gscratch/stf/zibochen/
+  302  ls
+  303  cd 38_res_sampling/
+  304  ls
+  305  cd /gscratch/stf/sunnylin/
+  306  ls
+  307  cat cmd_path0217
+  308  cd /gscratch/stf/zibochen/38_res_sampling/14.2222_5.5.16772_282
+  309  cd /gscratch/stf/zibochen/38_res_sampling/1start/14.2222_5.16772_282/15
+  310  ls
+  311  LS
+  312  cd /gscratch/stf/sunnylin/
+  313  LS
+  314  LS cmd_path
+  315  rsub cmd_path
+  316  exit
+  317  exit
+  318  1node
+  319  cd /gscratch/stf/sunnylin/
+  320  cat cmd_path0001
+  321  LS
+  322  cd /gscratch/stf/zibochen/tilted_helix_sample/35_35/1start/24.4444_4.57947_157.792/27/
+  323  ls
+  324  cd /gscratch/stf/zibochen/38_res_sampling/1start/23.4222_3.18686_193.378/23/
+  325  ls
+  326  cd /gscratch/stf/zibochen/tilted_helix_sample/40_16/3start/45.9111_3.59623_87.2165/1
+  327  ls
+  328  /gscratch/stf/zibochen/tilted_helix_sample/40_16/4start/41.8222_5.16772_51.1364/18/
+  329  ls
+  330  /gscratch/stf/zibochen/tilted_helix_sample/40_16/5start/31.6_11.3356_27.9/27/
+  331  ls
+  332  cd /gscratch/stf/zibochen/tilted_helix_sample/40_16/5start/31.6_11.3356_27.9/27/
+  333  ls
+  334  cd /gscratch/stf/zibochen/tilted_helix_sample/40_16/5start/31.6_11.3356_27.9/27/
+  335  ls
+  336  cd /gscratch/stf/zibochen/tilted_helix_sample/40_16/5start/31.6_11.3356_27.9/27/
+  337  /gscratch/stf/zibochen/tilted_helix_sample/40_16/4start/41.8222_5.16772_51.1364/18/
+  338  cd /gscratch/stf/zibochen/tilted_helix_sample/40_16/5start/48.9778_3.38536_44.7097/4/
+  339  ls
+  340  cd ../../../
+  341  cd /gscratch/stf/sunnylin/
+  342  cat history20160411
+  343  history >> history20160411.out
+  344  cat history20160411.out 
+  345  top
+  346  q
+  347  top
+  348  cd /gscratch/stf/
+  349  cd sunnylin/
+  350  ls
+  351  exit
+  352  cd /gscratch/stf/sunnylin/
+  353  ls
+  354  cd ../zibochen/
+  355  ls
+  356  b
+  357  cd sunnylin/
+  358  ls
+  359  cp ../zibochen/tilted_helix_sample/ .
+  360  ls
+  361  LS
+  362  mkdir tilted
+  363  ls
+  364  LS
+  365  cd tilted/
+  366  cp ../../zibochen/tilted_helix_sample/. .
+  367  cd ..
+  368  cp -a /gscratch/stf/zibochen/tilted_helix_sample/ .
+  369  pwd
+  370  top
+  371  cd /gscratch/stf/sunnylin/
+  372  ls
+  373  cd 38_res_sampling/
+  374  ls
+  375  LS
+  376  LS /gscratch/stf/zibochen/38_res_sampling/
+  377  LS /gscratch/stf/zibochen/tilted_helix_sample/
+  378  LS /gscratch/stf/sunnylin/tilted_helix_sample/
+  379  cp -r /gscratch/stf/zibochen/tilted_helix_sample/ /gscratch/stf/sunnylin/tilted_helix_sample/
+  380  cp -r /gscratch/stf/zibochen/tilted_helix_sample/* /gscratch/stf/sunnylin/tilted_helix_sample/
+  381  pwd
+  382  ls
+  383  cd /usr/share/
+  384  ls
+  385  cd ..
+  386  q
+  387  exit
+  388  cd /gscratch/st
+  389  cd /gscratch/stf/
+  390  LS
+  391  cd sun
+  392  cd sunnylin/
+  393  LS
+  394  ls
+  395  LS
+  396  rm cmd_path0* flatland*
+  397  ls
+  398  LS
+  399  mkdir Rosetta
+  400  mv database/ Rosetta/
+  401  LS
+  402  cp flatland.static.linuxgccrelease Rosetta/
+  403  LS
+  404  mkdir 160624_flatland_finer_sampling
+  405  LS
+  406  cd 160624_flatland_finer_sampling/
+  407  LS
+  408  cp /gscratch/baker/zibochen/port/flatland_broad_run_all.sh .
+  409  cp /gscratch/baker/zibochen/port/flatland_finer_search.py .
+  410  LS
+  411  more flatland_finer_search.py 
+  412   
+  413  LS
+  414  pwd
+  415  LS
+  416  more flatland_broad_run_all.sh 
+  417  :S
+  418  LS
+  419  bL
+  420  b
+  421  LS
+  422  cd p
+  423  cd pdb_extract/
+  424  LS
+  425  ls
+  426  LS
+  427  vi matrix_new_pdb_cccp_extraction.py
+  428  LS
+  429  cp pdb_extraction/*list .
+  430  LS
+  431  rm pdb2.rawlist pdb.rawlist
+  432  LS
+  433  for i in *list;do python matrix_new_pdb_cccp_extraction.py $i;done
+  434  LS
+  435  vi matrix_new_pdb_cccp_extraction.py 
+  436  LS
+  437  for i in *list;do python matrix_new_pdb_cccp_extraction.py $i;done
+  438  LS
+  439  more A_2L_6H_C3_12_matrix.out
+  440  LD
+  441  lS
+  442  LS
+  443  b
+  444  LS
+  445  cp pdb_extract/*out 160624_flatland_finer_sampling/
+  446  cd 160624_flatland_finer_sampling/
+  447  LS
+  448  j=1;for i in *out;do mkdir $j;mv $i $j;let j=j+1;done
+  449  S
+  450  LS
+  451  LS 1`
+  452  LS 1
+  453  LS
+  454  cd 1
+  455  LS
+  456  echo /gscratch/baker/zibochen/flatland/benchmark/A_2L_6H_C3_12_xray.pdb >list
+  457  LS
+  458  more list 
+  459  cd ../2
+  460  e
+  461  cd /gscratch/stf/
+  462  LS
+  463  cd s
+  464  LS
+  465  cd sun
+  466  LS
+  467  cd sunnylin/
+  468  LS
+  469  cd 160624_flatland_finer_sampling/
+  470  lS
+  471  L
+  472  LS
+  473  cd 1
+  474  LS
+  475  b
+  476  LS
+  477  cd 1
+  478  LS
+  479  python ../flatland_finer_search.py *.out 3 list &
+  480  more ~/.bashrc 
+  481  LS
+  482  python2.6 ../flatland_finer_search.py *out 3 list 
+  483  python2 ../flatland_finer_search.py *out 3 list 
+  484  LS
+  485  LS /gscratch/baker/wangyr/
+  486  LS
+  487  vi ~/.bashrc 
+  488  source ~/.bashrc 
+  489  LS
+  490  python ../flatland_finer_search.py *out 3 list 
+  491  vi ~/.bashrc 
+  492  source ~/.bashrc 
+  493  python ../flatland_finer_search.py *out 3 list 
+  494  LS
+  495  more A_2L_6H_C3_12_matrix.out
+  496  LS
+  497  rm -r 1
+  498  python ../flatland_finer_search.py list 3 *out
+  499  bg
+  500  LS
+  501  cd ../2
+  502  LS
+  503  python ../flatland_finer_search.py list 3 *out &
+  504  cd ../3
+  505  LS
+  506  python ../flatland_finer_search.py list 3 *out &
+  507  cd ../4/
+  508  LS
+  509  python ../flatland_finer_search.py list 3 *out &
+  510  cd 
+  511  cd ../5
+  512  pwd
+  513  cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/
+  514  LS
+  515  cd 5/
+  516  python ../flatland_finer_search.py list 2 *out &
+  517  cd ../6/
+  518  python ../flatland_finer_search.py list 2 *out &
+  519  LS
+  520  b
+  521  LS
+  522  vi flatland_finer_search.py 
+  523  L:S
+  524  LS
+  525  t
+  526  LS
+  527  more flatland_broad_run_all.sh 
+  528  cp /gscratch/stf/zibochen/flatland_process.sh .
+  529  LS
+  530  vi flatland_process.sh 
+  531  LS
+  532  for i in `seq 6`;do cd $i;sh ../flatland_process.sh;cd ../;done &
+  533  LS
+  534  cd 1
+  535  LS
+  536  more cmd_path
+  537  LS
+  538  b
+  539  LS
+  540  cd 1
+  541  LS
+  542  cd 1
+  543  LS
+  544  cd 1
+  545  LS
+  546  more P3_0.cmd 
+  547  sh P3_0.cmd 
+  548  LS
+  549  rm design.res 
+  550  LS
+  551  b
+  552  LS
+  553  b
+  554  LS
+  555  cat */cmd_path >do_jobs
+  556  LS
+  557  more do_jobs 
+  558       
+  559  S
+  560  LS
+  561  wc -l do_jobs 
+  562  nodestate stf
+  563  LS
+  564  nodestate baker
+  565  LS
+  566  LS 1
+  567  cd 11
+  568  cd 1/1/
+  569  LS
+  570  ls
+  571  b
+  572  LS
+  573  cd 1/1
+  574  LS
+  575  more P3_0.cmd 
+  576  more ../2/P3_1.cmd 
+  577  b
+  578  LS
+  579  b
+  580  LS
+  581  more do_jobs 
+  582   
+  583  LS
+  584  vi ~/.bashrc 
+  585  source ~/.bashrc 
+  586  sudo pssu --initial
+  587  module load parallel_sql
+  588  sudo pssu --initial
+  589  e
+  590  cd /gscratch/stf/sun
+  591  LS
+  592  cd /gscratch/stf/sunnylin/
+  593  LS
+  594  cd 160624_flatland_finer_sampling/
+  595  cd 2
+  596  LS
+  597  echo /gscratch/baker/zibochen/flatland/benchmark/A_2L_6H_C3_13_xray.pdb >list
+  598  cd ../3
+  599  ls
+  600  echo /gscratch/baker/zibochen/flatland/benchmark/A_2L_6H_C3_6_xray.pdb >list
+  601  cd ../4
+  602  ls
+  603  echo /gscratch/baker/zibochen/flatland/benchmark/A_5L_6H_C3_1_scemal.pdb >list
+  604  cd ../5
+  605  LS
+  606  echo /gscratch/baker/zibochen/flatland/benchmark/A_ZC16.pdb >list
+  607  cd ../6
+  608  ls
+  609  echo /gscratch/baker/zibochen/flatland/benchmark/A_ZC31.pdb >list
+  610  LS
+  611  b
+  612  LS
+  613  vi flatland_finer_search.py 
+  614  LS
+  615  vi flatland_finer_search.py 
+  616  LS
+  617  pwd
+  618  LS /gscratch/stf/sunnylin/
+  619  LS
+  620  vi flatland_finer_search.py 
+  621  LS
+  622  1node 
+  623  LS
+  624  module load parallel_sql
+  625  sudo pssu --initial
+  626  pwd
+  627  LS
+  628  S
+  629  cat do_jobs |psu --load
+  630  psu
+  631  psu --stats
+  632  LS
+  633  cp /gscratch/baker/zibochen/scripts/submit_design .
+  634  LS
+  635  vi submit_design 
+  636  LS
+  637  module load parallel_sql
+  638  psu --stats
+  639  #for i in `seq 60`;do qsub submit_design 
+  640  LS ../
+  641  LS ../../zibochen/
+  642  LS
+  643  for i in `seq 60`;do qsub submit_design -q bf;done >JOB_IDs &
+  644  LS
+  645  qs
+  646  LS
+  647  more JOB_IDs 
+  648  qs
+  649  wc -l JOB_IDs 
+  650  qs
+  651  LS
+  652  cd 1
+  653  LS
+  654  cd 1
+  655  LS
+  656   cd 1
+  657  LS
+  658  qs
+  659  psu --stats
+  660  history
+  661  history > history_160626
+  662  LS
+  663  cd /gscratch/stf/sunnylin/
+  664  ls
+  665  cd 160624_flatland_finer_sampling/
+  666  ls
+  667  cd 1
+  668  ls
+  669  1
+  670  cd 1
+  671  ls
+  672  cd 1
+  673  ls
+  674  cat design.res 
+  675  psu --stats
+  676  cd ..
+  677  ls
+  678  cd 185
+  679  ls
+  680  cat design.res 
+  681  cd ..
+  682  ls
+  683  cd 1
+  684  ls
+  685  cd 202
+  686  ls
+  687  cat flatland.log 
+  688  rsub flatland.log 
+  689  cd ..
+  690  ls
+  691  psu --stats
+  692  qstat
+  693  psu --reset
+  694  nodestate stf
+  695  for i in `seq 22`;do qsub submit_design -q bf;done >JOB_IDs &
+  696  [wd
+  697  pwd
+  698  b
+  699  LS
+  700  for i in `seq 22`;do qsub submit_design -q bf;done >JOB_IDs &
+  701  qs
+  702  LS
+  703  pwd
+  704  LS
+  705  ls
+  706  LS
+  707  qs
+  708  psu --stats
+  709  LS
+  710  cd 
+  711  cd /gscratch/stf/sunnylin/
+  712  LS
+  713  cd 160624_flatland_finer_sampling/
+  714  SL
+  715  LS
+  716  cd 
+  717  o
+  718  LS
+  719  pwd
+  720  b
+  721  cd 160624_flatland_finer_sampling/
+  722  ls
+  723  s
+  724  LS
+  725  cd 1
+  726  ls
+  727  LS
+  728  cd 1
+  729  LS
+  730  LS 31
+  731  pwd
+  732  qs
+  733  psu --stats
+  734  qs
+  735  LS /gscratch/baker/zibochen/scripts/xml_and_flags/
+  736  vi /gscratch/baker/zibochen/scripts/xml_and_flags/hyak_flatland_asym_hbnet.xml 
+  737  rsub gscratch/baker/zibochen/scripts/xml_and_flags/hyak_flatland_asym_hbnet.xml 
+  738  vi gscratch/baker/zibochen/scripts/xml_and_flags/hyak_flatland_asym_hbnet.xml 
+  739  rsub /gscratch/baker/zibochen/scripts/xml_and_flags/hyak_flatland_asym_hbnet.xml 
+  740  rsub -f /gscratch/baker/zibochen/scripts/xml_and_flags/hyak_flatland_asym_hbnet.xml 
+  741  cd ..
+  742  cd /gscratch/stf/sunnylin/
+  743  LS
+  744  cd 160624_flatland_finer_sampling/
+  745  LS
+  746  ls
+  747  LS 1
+  748  cd 1
+  749  1
+  750  ls
+  751  cd 1
+  752  LS
+  753  LS 53
+  754  LS 53/1/
+  755  pwd
+  756  b
+  757  LS
+  758  pwd
+  759  LS
+  760  cd 1
+  761  LS
+  762  ls
+  763  LS
+  764  rm -r */* &
+  765  LS
+  766  history 
+  767  LS
+  768  #for i in */;do cd $i;j=1;for k in *pdb;do cp $k $j;cp let j=j+1;done;cd ../;done
+  769  more ../../run.sh 
+  770  for i in */;do cd $i;j=1;for k in *pdb;do cp $k $j;cp ${k//pdb/res} $j;let j=j+1;done;cd ../;done &
+  771  LS
+  772  LS 9
+  773  LS 99
+  774  ls
+  775  LS 1
+  776  pwd
+  777  b
+  778  LS
+  779  b
+  780  S
+  781  LS
+  782  ls
+  783  cd 1/1/
+  784  LS
+  785  cd 113/
+  786  ls
+  787  b
+  788  :S
+  789  LS
+  790  b
+  791  LS
+  792  ls
+  793  cd 2
+  794  LS
+  795  cd 1
+  796  ls
+  797  LS
+  798  LS 1
+  799  LS 2
+  800  LS 190
+  801  for i in */;do cd $i;j=1;for k in *pdb;do cp $k $j;cp ${k//pdb/res} $j;let j=j+1;done;cd ../;done &
+  802  LS
+  803  LS 176/
+  804  L
+  805  LS
+  806  LS 22
+  807  t
+  808  for i in */;do cd $i;j=1;for k in *pdb;do cp $k $j;cp ${k//pdb/res} $j;let j=j+1;done;cd ../;done &
+  809  LS
+  810  LS 41
+  811  LS 23
+  812  LS 1
+  813  LS
+  814  cd 106/
+  815  LS
+  816  pwd
+  817  b
+  818  LS
+  819  ls
+  820  LS
+  821  ls
+  822  LS
+  823  t
+  824  LS
+  825  t
+  826  pwd
+  827  LS
+  828  pwd
+  829  LS ../../1/1/
+  830  LS
+  831  ls
+  832  LS
+  833  b
+  834  LS
+  835  b
+  836  LS
+  837  ls
+  838  LS
+  839  exit
+  840  cd /gscratch/stf/sunnylin/
+  841  ls
+  842  cd 160624_flatland_finer_sampling/
+  843  ls
+  844  cd 1
+  845  ls
+  846  cd 1
+  847  ls
+  848  cd ..
+  849  LS
+  850  more do_jobs 
+  851  ls
+  852  cd 1
+  853  ls
+  854  more cmd_path
+  855  LS
+  856  cd 1
+  857  ls
+  858  cd 1
+  859  ls
+  860  b
+  861  LS
+  862  ls
+  863  more  for i in */;do cd $i;j=1;for k in *pdb;do mkdir $j; mv $k $j;mv ${k//pdb/res} $j;let j=j+1;done;cd ../;done &
+  864  more flatland_broad_run_all.sh
+  865  LS
+  866  ls
+  867  cat flatland_finer_search.py 
+  868  rsub flatland_finer_search.py 
+  869  LS
+  870  LS 6/99
+  871  LS 6/1/99/
+  872  LS
+  873  cd 1/
+  874  ls
+  875  LS
+  876  more cmd_path
+  877  LS
+  878  cd 1
+  879  ls
+  880  b
+  881  LS
+  882  more cmd_path
+  883  LS
+  884  LS /gscratch/stf/sunnylin/160624_flatland_finer_sampling/1/1/118;
+  885  LS
+  886  cat cmd_path |psu --load
+  887  LS
+  888  psu --stats
+  889  psu --del-all
+  890  psu --del
+  891  LS
+  892  b
+  893  LS
+  894  more submit_design 
+  895  LS
+  896  nodestate stf
+  897  LS
+  898  cp dir_list do_HBNet
+  899  LS
+  900  mv do_jobs do_sampling
+  901  LS
+  902  rsub do_HBNet 
+  903  LS
+  904  for i in `seq 20`;do qsub submit_design -W group_list hyak_stf;done >JOB_IDs 
+  905  for i in `seq 20`;do qsub submit_design -W group_list=hyak-stf;done >JOB_IDs 
+  906  qs
+  907  qstat -f
+  908  qs
+  909  psu --stats
+  910  history > ../history_160628_login
