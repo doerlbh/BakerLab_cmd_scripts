@@ -1,3 +1,8 @@
+#!/bin/bash
+# Baihan Lin
+# Date: July 2015
+# Lab: Baker Lab
+
 ##### Making fragments
 /work/robetta/workspace/labFragPicker_DO_NOT_REMOVE/bakerlab_scripts/boinc/make_fragments.py -pdbs_folder fold_where_my_pdbs_are -n_proc 20
 
