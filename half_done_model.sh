@@ -3,17 +3,17 @@
 #Date: July 2016
 #Lab: Baker Lab
 
-cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
-for i in [0-9];
-	do cd $i;
-	for j in *pdb;
-		do if [ -f done ];
-			then echo `pwd` >> 20160706_donelist;
-			else echo `pwd` >> 20160706_unfinishedlist;
-		fi;
-	cd ../;
-	done;
-done;
+#cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
+#for i in [0-9];
+#	do cd $i;
+#	for j in *pdb;
+#		do if [ -f done ];
+#			then echo `pwd` >> 20160706_donelist;
+#			else echo `pwd` >> 20160706_unfinishedlist;
+#		fi;
+#	cd ../;
+#	done;
+#done;
 
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/
 find `pwd` -name "HBNet_*.pdb" > 20160706_pdblist
@@ -29,10 +29,11 @@ for i in `cat 20160706_dirlist`;
 		fi;
 done
 
-cp design_list_absolute_round_1 design_out.sh
-mkdir HBNet_designs
+cp  20160706_modelpdblist model_out.sh
+cat 20160706_modelreslist >> model_out.sh
+mkdir 20160706_HBNet_models
 
-sed -i -e 's/^/cp /' design_out.sh
-sed -i 's#$# /gscratch/stf/sunnylin/160624_flatland_finer_sampling/HBNet_designs#' design_out.sh
+sed -i -e 's/^/mkdir cp /' model_out.sh
+sed -i 's#$# /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_HBNet_models#' design_out.sh
 
-sh design_out.sh
+sh model_out.sh
