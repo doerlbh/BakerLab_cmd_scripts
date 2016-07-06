@@ -1,4 +1,7 @@
 #!/bin/bash
+#Author: Baihan Lin
+#Date: June 2016
+#Lab: Baker Lab
 
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/1/1
 for i in */;do cd $i;j=1;for k in *pdb;do mkdir $j; mv $k $j;mv ${k//pdb/res} $j;let j=j+1;done;cd ../;done

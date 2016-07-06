@@ -1,16 +1,18 @@
 #!/bin/bash
-# Author: Baihan Lin
-# Date: July 2016
-# Lab: Baker Lab
+#Author: Baihan Lin
+#Date: July 2016
+#Lab: Baker Lab
 
-
-for i in *pdb
-	do if [ -f done ]
-		then echo `pwd` >> 20160706_donelist
-		else echo `pwd` >> 20160706_unfinishedlist
-	fi
+cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
+for i in */;
+	do cd i;
+	for j in *pdb;
+		do if [ -f done ]
+			then echo `pwd` >> 20160706_donelist
+			else echo `pwd` >> 20160706_unfinishedlist
+		fi
+	done
 done
-
 
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/
 find `pwd` -name "HBNet_*.pdb" > design_list_absolute_round_1
