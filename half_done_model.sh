@@ -15,17 +15,20 @@
 #	done;
 #done;
 
-cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/
-find `pwd` -name "HBNet_*.pdb" > 20160706_pdblist
-for i in `cat 20160706_pdblist `;do dirname $i;done > 20160706_dirlist
+cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
+
+rm 20160706_*;
+
+find `pwd` -name "HBNet_*.pdb" > 20160706_pdblist;
+for i in `cat 20160706_pdblist `;do dirname $i;done > 20160706_dirlist;
 
 for i in `cat 20160706_dirlist`; 
 	do cd $i;
 		if [ -f done ];
-			then echo `pwd` >> 20160706_donelist;
+			then echo `pwd` >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_donelist;
 				find `pwd` -name "HBNet_*.pdb" >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_modelpdblist
 				find `pwd` -name "HBNet_*.res" >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_modelreslist
-			else echo $i >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_unfinishedlist;
+			else echo `pwd` >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_unfinishedlist;
 		fi;
 	cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/
 done
