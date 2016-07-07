@@ -17,7 +17,7 @@
 
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
 
-rm 20160706_*;
+rm -r 20160706_*;
 
 find `pwd` -name "HBNet_*.pdb" > 20160706_pdblist;
 for i in `cat 20160706_pdblist `;do dirname $i;done > 20160706_dirlist;
@@ -38,7 +38,7 @@ cat 20160706_modelreslist >> model_out.sh
 mkdir 20160706_HBNet_models
 
 sed -i -e 's/^/cp /' model_out.sh
-sed -i 's#$# /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_HBNet_models#' design_out.sh
+sed -i 's#$# /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_HBNet_models#' model_out.sh
 
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_HBNet_models;
 j=1;
