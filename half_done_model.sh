@@ -34,8 +34,17 @@ cp  20160706_modelpdblist model_out.sh
 cat 20160706_modelreslist >> model_out.sh
 mkdir 20160706_HBNet_models
 
-sed -i -e 's/^/mkdir cp /' model_out.sh
+sed -i -e 's/^/cp /' model_out.sh
 sed -i 's#$# /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_HBNet_models#' design_out.sh
+
+cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_HBNet_models;
+j=1;
+for k in *pdb;
+	do mkdir $j; 
+		mv $k $j;
+		mv ${k//pdb/res} $j;
+		let j=j+1;
+	done;
 
 sh model_out.sh
 
