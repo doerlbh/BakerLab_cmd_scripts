@@ -20,13 +20,14 @@ find `pwd` -name "HBNet_*.pdb" > 20160706_pdblist
 for i in `cat 20160706_pdblist `;do dirname $i;done > 20160706_dirlist
 
 for i in `cat 20160706_dirlist`; 
-	do cd i;
+	do cd $i;
 		if [ -f done ];
 			then echo `pwd` >> 20160706_donelist;
-				find `pwd` -name "HBNet_*.pdb" > 20160706_modelpdblist
-				find `pwd` -name "HBNet_*.res" > 20160706_modelreslist
-			else echo `pwd` >> 20160706_unfinishedlist;
+				find `pwd` -name "HBNet_*.pdb" >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_modelpdblist
+				find `pwd` -name "HBNet_*.res" >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_modelreslist
+			else echo $i >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_unfinishedlist;
 		fi;
+	cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/
 done
 
 cp  20160706_modelpdblist model_out.sh
@@ -37,3 +38,4 @@ sed -i -e 's/^/mkdir cp /' model_out.sh
 sed -i 's#$# /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_HBNet_models#' design_out.sh
 
 sh model_out.sh
+
