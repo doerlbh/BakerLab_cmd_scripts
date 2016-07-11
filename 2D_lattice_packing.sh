@@ -47,7 +47,13 @@ paste packing1.run sil20160711.list > packing2.run;
 sed -i 's#$#  -parser:script_vars resfile=#' packing2.run;
 paste packing2.run res20160711.list > packing3.run
 
+sudo pssu --create-set 2Dpacking
 
+ cat packing3.run |psu --load --sql-set 2Dpacking
+
+ psu --stat --sql-set 2Dpacking
+ 
+ for i in `seq 60`;do qsub submit_packing -q bf;done >JOB_IDs_2Dpacking
 
 # cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/1/89/203 ;/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ @/gscratch/baker/zibochen/scripts/xml_and_flags/flatland_final_packing.flags -in:file:silent 	/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/1/89/203/HBNet_C211_C211_62.2_47.8_740_A_ZC16_adjacent_0001_0001_designed_full_lattice.silent  -parser:script_vars resfile=	/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/1/89/203/HBNet_C211_C211_62.2_47.8_740_A_ZC16_adjacent_0001_0001_designed_full_lattice.res
 

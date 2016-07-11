@@ -2,7 +2,9 @@
 #Author: Baihan Lin
 #Lab: Baker Lab
 
-sudo pssu --create-set symmseq
+ sudo pssu --create-set symmseq
+
+ cat symm_seq.run |psu --load --sql-set symm_seq
 
  psu --stat --sql-set symmseq
  
