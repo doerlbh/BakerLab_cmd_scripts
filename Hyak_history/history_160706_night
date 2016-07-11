@@ -1,0 +1,317 @@
+    1  1node
+    2  cd /gscratch/stf/sunnylin/
+    3  cat /gscratch/stf/zibochen/tem
+    4  source ~/.bashrc
+    5  history
+    6  cd 160624_flatland_finer_sampling/2/1/116
+    7  psu --stats
+    8  cat ../../../run.sh 
+    9  /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -missing_density_to_jump true
+   10  #/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -missing_density_to_jump true -s 
+   11  cd 
+   12  o
+   13  cd 2/1/116/1/
+   14  ls
+   15  /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -missing_density_to_jump true -s P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.pdb -parser:script_vars resfile=P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res 
+   16  /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -missing_density_to_jump true -s P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.pdb -parser:script_vars resfile=P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res -parser:protocol /gscratch/baker/zibochen/scripts/xml_and_flags/hyak_flatland_asym_hbnet.xml 
+   17  SL
+   18  more P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res 
+   19  cat P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res 
+   20  cp P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res test.txt
+   21  cat test.txt 
+   22  grep -v '^        ' EmptyStartinglines.txt >NoEmptyStartingLines.txt
+   23  grep -v ' ' test.txt >NoEmptest.txt
+   24  cat NoEmpt
+   25  cat NoEmptest.txt 
+   26  grep ^' A' test.txt >NoEmptest.txt
+   27  cat NoEmptest.txt 
+   28  sed '/^ / d'
+   29  sed '/^ / d' P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjace
+   30  cd ../../../
+   31  cd ..
+   32  more dir_list 
+   33  cp dir_list rm_reshead
+   34  for i in `cat rm_reshead`; do cd $i; sed -i '/^ / d' *.res; done & 
+   35  psu --stats
+   36  cd 2/1/1/116/1
+   37  cd 2/1/116/1
+   38  ls
+   39  cat P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res 
+   40  history
+   41  qa
+   42   /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -missing_density_to_jump true -s P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.pdb -parser:script_vars resfile=P321_P321_41_41_3721.5_A_2L_6H_C3_13_xray_adjacent.res -parser:protocol /gscratch/baker/zibochen/scripts/xml_and_flags/hyak_flatland_asym_hbnet.xml 
+   43  ls
+   44  cd ..
+   45  for i in `cat rm_reshead`; do cd $i; rm done; done & 
+   46  for i in `cat ../../../rm_reshead`; do cd $i; rm done; done & 
+   47  b
+   48  ls
+   49  LS
+   50  more do_HBNet
+   51  psu --stats
+   52  cd ..
+   53  history > history_160628_pm_hyak
+   54  history
+   55  cd 160624_flatland_finer_sampling/
+   56  cd 1
+   57  ls
+   58  psu --stats
+   59  cat cmd_path
+   60  psu --stats
+   61  cd ..
+   62  LS
+   63  cd 1
+   64  LS 1
+   65  qs
+   66  psu --stats
+   67  nodestate stf
+   68  psu --stats
+   69  psu --del
+   70  psu --stats
+   71  qs
+   72  cd ..
+   73  ls
+   74  more pdb_list_1048 
+   75  ls
+   76  rsub pdb_list_round_1 
+   77  more pdb_list_round_1 
+   78  LS
+   79  cd 1/1/117
+   80  ls
+   81  cd 1
+   82  ls
+   83  cat P321_P321_38.2_38.2_111.5-22_A_2L_6H_C3_12_xray_adjacen
+   84  cat *.res
+   85  psu --stats
+   86  nodestate stf
+   87  psu --stats
+   88  qman
+   89  man psu
+   90  psu --stats
+   91  pwd
+   92  psu --stats
+   93  nodestate stf
+   94  psu --stats
+   95  cd /gscratch/stf/sunnylin/
+   96  cd 160624_flatland_finer_sampling/
+   97  find . -name "HBNet"
+   98  cat run.sh n
+   99  find . -name "HBNet*" 
+  100  psu --stats
+  101  nodestate stf
+  102  psu --stats
+  103  find . -name "HBNet*" 
+  104  nodestate stf
+  105  find . -name "HBNet*" 
+  106  find `pwd` -name "HBNet*" 
+  107  psu --stats
+  108  nodestate stf
+  109  psu --stats
+  110  nodestate stf
+  111  psu --stats
+  112  nodestate stf
+  113  psu --stats
+  114  nodestate stf
+  115  qs
+  116  nodestate stf
+  117  psu --stats
+  118  nodestate stf
+  119  psu --stats
+  120  nodestate stf
+  121  psu --stats
+  122  ls
+  123  cd /gscratch/stf/sunnylin/
+  124  cd 160624_flatland_finer_sampling/
+  125  ls
+  126  cat design
+  127  cat design2desktop.sh 
+  128  psu --stats
+  129  cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/1/1
+  130  cd ../../
+  131  for i in `seq 20`;do qsub submit_design -W group_list=hyak-stf;done >JOB_IDs
+  132  psu --stats
+  133  cat submit_desi
+  134  psu --stats
+  135  nodestate stf
+  136  psu --stats
+  137  nodestate baker
+  138  psu --stats
+  139  nodestate stf
+  140  psu --stats
+  141  nodestate stf
+  142  psu --stats
+  143  cd /gscratch/stf/sunnylin
+  144  home
+  145  h
+  146  cd 160624_flatland_finer_sampling/
+  147  rsub design_list_absolute_round_1 
+  148  psu --stats
+  149  cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/
+  150  history
+  151  for i in `seq 21`;do qsub submit_design -W group_list=hyak-stf;done >>JOB_IDs
+  152  ls
+  153  cat flatland_process.sh 
+  154  ls
+  155  cat run.sh 
+  156  LS
+  157  for i in *pdb; do if [ -f done ];  echo `pwd` >> 20160706_donelist; echo `pwd` >> 20160706_unfinishedlist; fi
+  158  ls *pddb
+  159  ls *pdb
+  160  echo `pwd`
+  161  echo *pdb
+  162  half_done_model.sh
+  163  touch for i in $i
+  164  for i in *pdb; if [ -f done ]
+  165   echo `pwd` >> 20160706_donelist
+  166  finishedlist
+  167  e
+  168  exit
+  169  psu --stats
+  170  cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/
+  171  LS
+  172  cat 20160706_HBNet_models/
+  173  cd 20160706_HBNet_models/
+  174  ls
+  175  rsub h
+  176  cd ..
+  177  rsub half_done_model.sh 
+  178  LS
+  179  more 20160706_modelpdblist 
+  180  rsub half_done_model.sh 
+  181  cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/
+  182  rsub half_done_model.sh 
+  183  LS
+  184  more 20160706_
+  185  more 20160706_d
+  186  more 20160706_donelist 
+  187  LS /gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/1/89/203
+  188  more 20160706_unfinishedlist 
+  189  ls /gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/1/85/126
+  190  ls /gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/1/89/203
+  191  psu --stats
+  192  cd 20160706_HBNet_models/
+  193  ls
+  194  cd 1
+  195  ls
+  196  more /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_donelist
+  197  cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_donelist |wc
+  198  cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_donelist | uniq -d |wc
+  199  cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_donelist | uniq -d 
+  200  cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_donelist | uniq -d > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_uniqdonelist
+  201  history > /gscratch/stf/sunnylin/history_160706
+  202  cd /gscratch/stf/zibochen/
+  203  ls
+  204  more symm_seq.run 
+  205* more /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_donelist
+  206  cd /gscratch/stf/sunnylin/
+  207  cd 160624_flatland_finer_sampling/
+  208  ls
+  209  LS
+  210  ls
+  211  cd 1
+  212  ls
+  213  cd 1
+  214  ls
+  215  cd ..
+  216  ls
+  217  cd ..
+  218  ls
+  219  cd 2
+  220  ls
+  221  cd ../3
+  222  ls
+  223  cd ../4
+  224  ls
+  225  cd ../5
+  226  ls
+  227  cd ..
+  228  more 20160706_uniqdonelist 
+  229  grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/" 20160706_uniqdonelist 
+  230  grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/" 20160706_uniqdonelist > 20160706_uniqdonelist_C2
+  231  grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/6/" 20160706_uniqdonelist >> 20160706_uniqdonelist_C2
+  232  grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/1/" 20160706_uniqdonelist > 20160706_uniqdonelist_C3
+  233  grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/2/" 20160706_uniqdonelist >> 20160706_uniqdonelist_C3
+  234  grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/3/" 20160706_uniqdonelist >> 20160706_uniqdonelist_C3
+  235  grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/4/" 20160706_uniqdonelist >> 20160706_uniqdonelist_C3
+  236  more 20160706_uniqdonelist_C2
+  237  more 20160706_uniqdonelist_C3
+  238* cp 20160706_uniqdonelist_C2 C2_sym.s
+  239  cp 20160706_uniqdonelist_C3 C3_sym.sh
+  240  more /gscratch/stf/zibochen/symm_seq.run 
+  241  sed -i -e 's/^/cd /' *_sym.sh
+  242  sed -i 's#$# ;for i in HBNet*pdb;do /gscratch/dimaio/zibochen/Rosetta/main/source/bin/symm_seq_gen_2D.default.linuxgccrelease -s $i *adjacent.pdb -cn 3;done>symm_seq.log#' C3_sym.sh
+  243  sed -i 's#$# ;for i in HBNet*pdb;do /gscratch/dimaio/zibochen/Rosetta/main/source/bin/symm_seq_gen_2D.default.linuxgccrelease -s $i *adjacent.pdb -cn 2;done>symm_seq.log#' C2_sym.sh
+  244  more C2_sym.sh 
+  245  more C3_sym.sh 
+  246  history > /gscratch/stf/sunnylin/history_160706_pm
+  247  more C2_sym.sh 
+  248  more C3_sym.sh 
+  249  psu --stats
+  250  man psu
+  251  showq -w qos=hpc-bf
+  252  more C2_sym.sh 
+  253  more C3_sym.sh 
+  254  LS
+  255  cat C3_sym.sh C2_sym.sh >symm_seq.run
+  256  LS
+  257  wc -l symm_seq.run 
+  258  more symm_seq.run 
+  259  LA
+  260  LS
+  261  nodestate baker
+  262  LS
+  263  more submit_design 
+  264  cp submit_design submit_design_12_core
+  265  vi submit_design_12_core 
+  266  more /gscratch/baker/zibochen/scripts/submit_design 
+  267  vi submit_design_12_core 
+  268  LS
+  269  ls
+  270  LS
+  271  cat symm_seq.run |psu --load --sql-set symm_seq
+  272  psu
+  273  sudo pssu --create-set symm_seq
+  274  cat symm_seq.run |psu --load --sql-set symm_seq
+  275  sudo pssu --create-set symmseq
+  276  vi submit_design_12_core 
+  277  cat symm_seq.run |psu --load --sql-set symmseq
+  278  psu --stat --sql-set symmseq
+  279  for i in `seq 10`;do qsub submit_design_12_core ;done >JOB_IDs_symmseq 
+  280  qs
+  281  LS
+  282  more submit_design_12_core 
+  283  nodestate bakre
+  284  nodestate baker
+  285  qs
+  286  LS
+  287  more JOB_IDs_symmseq 
+  288  histr
+  289  history 
+  290  #for i in `seq 10`;do qsub submit_design_12_core -q bf;done >JOB_IDs_symmseq 
+  291  qs
+  292  q
+  293  qs
+  294  q
+  295  qs
+  296  LS
+  297  q
+  298  qrun 
+  299  LS
+  300  qs
+  301  nodestate baker
+  302  LS
+  303  for i in `cat submit_design_12_core`;do qdel $i;done
+  304  for i in `cat JOB_IDs_symmseq`;do qdel $i;done
+  305  qs
+  306  LS
+  307  for i in `seq 10`;do qsub submit_design_12_core -W group_list=hyak-baker;done >JOB_IDs_symmseq 
+  308  qs
+  309  nodestate baker
+  310  qs
+  311  LS
+  312  hisor
+  313  history 
+  314  vi submit_design_12_core
+  315  LS
+  316  cd ..
+  317  history > history_160706_night
