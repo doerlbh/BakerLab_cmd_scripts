@@ -5,6 +5,8 @@
 
  find `pwd` -name "*lattice.silent" > sil20160711.list 
  find `pwd` -name "*lattice.res" > res20160711.list 
+for i in `cat sil20160711.list`;do dirname $i;done > sildir20160711.list
+
  wc -l res20160711.list 
  wc -l sil20160711.list 
  res20160711.list backup_res.sh
@@ -34,7 +36,17 @@ sed -i 's#$# ;for i in HBNet*res; do echo "">>$i;cat /gscratch/stf/zibochen/temp
 sed -i 's#$# ;for i in HBNet*res; do echo "">>$i;cat /gscratch/stf/zibochen/temp/c3_2.res>>$i;grep -v '^$' $i >temp;mv temp $i;sed -i \'s/B/A/g\' $i;done #' res_C3_2_13.sh;
 sed -i 's#$# ;for i in HBNet*res; do echo "">>$i;cat /gscratch/stf/zibochen/temp/c3_1.res>>$i;grep -v '^$' $i >temp;mv temp $i;sed -i \'s/B/A/g\' $i;done #' res_C3_1_12.sh;
 
-cat res_C3_1_12 res_C3_2_13 res_C3_3_6 res_C3_4_1 res_C2_1_31 res_C2_2_16 > make_res.sh
+cat res_C3_1_12.sh res_C3_2_13.sh res_C3_3_6.sh res_C3_4_1.sh res_C2_1_31.sh res_C2_2_16.sh > make_res.sh
+
+cp sildir20160711.list packing1.run;
+rsub packing1.run;
+
+sed -i -e 's/^/cd /' packing1.run;
+sed -i 's#$# ;/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ @/gscratch/baker/zibochen/scripts/xml_and_flags/flatland_final_packing.flags -in:file:silent #' packing1.run;
+paste packing1.run sil20160711.list > packing2.run
+sed -i 's#$#  -parser:script_vars resfile=#' packing2.run;
+paste packing2.run res20160711.list > packing3.run
+
 
 
 
