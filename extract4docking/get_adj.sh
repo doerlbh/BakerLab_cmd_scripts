@@ -18,7 +18,7 @@ grep "^ATOM..* B " $1.output > "B_$1.output"
 #figure out chain B
 	grep " CA " B_$1.output >B_$1.output.loop.list
 	grep " CA " $2 >$2.full.list
-	python /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking//get_alignment.py B_$1.output.loop.list $2.full.list $3 4
+	python /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_alignment.py B_$1.output.loop.list $2.full.list $3 4
 	# for i in `cat small_truc.txt `;do grep -e $i large_truc.txt|awk '{print $1}';done >temp1
 	# for i in `cat small_round.txt `;do grep -e $i large_round.txt|awk '{print $1}';done >temp2
 	# cat temp1 temp2 |sort |uniq > temp
