@@ -1,0 +1,180 @@
+core.init: Rosetta version 3d5a666b1722608110ce234cbddb98aacbb76e8a 2016-04-29 14:58:27 -0700 from git@github.com:RosettaCommons/main.git
+core.init: command: /gscratch/stf/zibochen/Rosetta/main/source/bin/symm_seq_gen_2D.default.linuxgccrelease -s HBNet_C211_C211_62.2_47.8_74.50_A_ZC16_adjacent_0001_0001.pdb C211_C211_62.2_47.8_74.50_A_ZC16_adjacent.pdb -cn 2
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=1841643210 seed_offset=0 real_seed=1841643210
+core.init.random: RandomGenerator:init: Normal mode, seed=1841643210 RG_type=mt19937
+core.init: Resolved executable path: /gscratch/stf/zibochen/Rosetta/main/source/build/src/release/linux/2.6/64/x86/gcc/4.4/default/symm_seq_gen_2D.default.linuxgccrelease
+core.init: Looking for database based on location of executable: /gscratch/stf/zibochen/Rosetta/main/database/
+core.chemical.ResidueTypeSet: Finished initializing fa_standard residue type set.  Created 293 residue types
+core.pack.task: Packer task: initialize from command line() 
+core.io.pdb.file_data: [ WARNING ] discarding 1 atoms at position 75 in file C211_C211_62.2_47.8_74.50_A_ZC16_adjacent.pdb. Best match rsd_type:  ASP
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 76 in file C211_C211_62.2_47.8_74.50_A_ZC16_adjacent.pdb. Best match rsd_type:  THR
+core.io.pdb.file_data: [ WARNING ] discarding 1 atoms at position 225 in file C211_C211_62.2_47.8_74.50_A_ZC16_adjacent.pdb. Best match rsd_type:  ASP
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 226 in file C211_C211_62.2_47.8_74.50_A_ZC16_adjacent.pdb. Best match rsd_type:  THR
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 75 atom  OXT (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 76 atom 1H   (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 76 atom 2H   (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 76 atom 3H   (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 225 atom  OXT (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 226 atom 1H   (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 226 atom 2H   (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 226 atom 3H   (trying to set temp)
+core.pack.task: Packer task: initialize from command line() 
+apps.pilot.zibochen.symm_seq_gen_2D: total number of residues per ASU: 75
+apps.pilot.zibochen.symm_seq_gen_2D: interface vector: 300
+apps.pilot.zibochen.symm_seq_gen_2D: chain A changes: [39, 41, 44, 45, 48, 51, 52, 55]
+apps.pilot.zibochen.symm_seq_gen_2D: chain B changes: [1, 4, 7, 8, 11, 63, 66, 67, 70]
+apps.pilot.zibochen.symm_seq_gen_2D: Cn=2, or P3/P4, detecting clashing residues
+apps.pilot.zibochen.symm_seq_gen_2D: residue chanegs in chain A: [39, 41, 44, 45, 48, 51, 52, 55]
+apps.pilot.zibochen.symm_seq_gen_2D: residue chanegs in chain B: [1, 4, 7, 8, 11, 63, 66, 67, 70]
+apps.pilot.zibochen.symm_seq_gen_2D: Cn=2, or P3/P4, copying residues to modular parts
+apps.pilot.zibochen.symm_seq_gen_2D: =========Symmetrizing pose from chain 1 to chain 1
+apps.pilot.zibochen.symm_seq_gen_2D: Vector of changes: [39, 41, 44, 45, 48, 51, 52, 55]
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 39 with residue 39
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 114 with residue 39
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 41 with residue 41
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 116 with residue 41
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 44 with residue 44
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 119 with residue 44
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 45 with residue 45
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 120 with residue 45
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 48 with residue 48
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 123 with residue 48
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 51 with residue 51
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 126 with residue 51
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 52 with residue 52
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 127 with residue 52
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 55 with residue 55
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 130 with residue 55
+apps.pilot.zibochen.symm_seq_gen_2D: =========Symmetrizing pose from chain 2 to chain 1
+apps.pilot.zibochen.symm_seq_gen_2D: Vector of changes: [1, 4, 7, 8, 11, 63, 66, 67, 70]
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 1 with residue 1
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 76 with residue 1
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 4 with residue 4
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 79 with residue 4
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 7 with residue 7
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 82 with residue 7
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 8 with residue 8
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 83 with residue 8
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 11 with residue 11
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 86 with residue 11
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 63 with residue 63
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 138 with residue 63
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 66 with residue 66
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 141 with residue 66
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 67 with residue 67
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 142 with residue 67
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 70 with residue 70
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 145 with residue 70
+apps.pilot.zibochen.symm_seq_gen_2D: Extracting ASU A
+apps.pilot.zibochen.symm_seq_gen_2D: generating full lattice
+core.conformation.symmetry.util: symmetrize_fold_tree(): setting anchor to 57
+core.init: Rosetta version 3d5a666b1722608110ce234cbddb98aacbb76e8a 2016-04-29 14:58:27 -0700 from git@github.com:RosettaCommons/main.git
+core.init: command: /gscratch/stf/zibochen/Rosetta/main/source/bin/symm_seq_gen_2D.default.linuxgccrelease -s HBNet_C211_C211_62.2_47.8_74.50_A_ZC16_adjacent_0001_0002.pdb C211_C211_62.2_47.8_74.50_A_ZC16_adjacent.pdb -cn 2
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-380698970 seed_offset=0 real_seed=-380698970
+core.init.random: RandomGenerator:init: Normal mode, seed=-380698970 RG_type=mt19937
+core.init: Resolved executable path: /gscratch/stf/zibochen/Rosetta/main/source/build/src/release/linux/2.6/64/x86/gcc/4.4/default/symm_seq_gen_2D.default.linuxgccrelease
+core.init: Looking for database based on location of executable: /gscratch/stf/zibochen/Rosetta/main/database/
+core.chemical.ResidueTypeSet: Finished initializing fa_standard residue type set.  Created 293 residue types
+core.pack.task: Packer task: initialize from command line() 
+core.io.pdb.file_data: [ WARNING ] discarding 1 atoms at position 75 in file C211_C211_62.2_47.8_74.50_A_ZC16_adjacent.pdb. Best match rsd_type:  ASP
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 76 in file C211_C211_62.2_47.8_74.50_A_ZC16_adjacent.pdb. Best match rsd_type:  THR
+core.io.pdb.file_data: [ WARNING ] discarding 1 atoms at position 225 in file C211_C211_62.2_47.8_74.50_A_ZC16_adjacent.pdb. Best match rsd_type:  ASP
+core.io.pdb.file_data: [ WARNING ] discarding 3 atoms at position 226 in file C211_C211_62.2_47.8_74.50_A_ZC16_adjacent.pdb. Best match rsd_type:  THR
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 75 atom  OXT (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 76 atom 1H   (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 76 atom 2H   (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 76 atom 3H   (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 225 atom  OXT (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 226 atom 1H   (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 226 atom 2H   (trying to set temp)
+core.io.pdb.file_data: [ WARNING ] can't find atom for res 226 atom 3H   (trying to set temp)
+core.pack.task: Packer task: initialize from command line() 
+apps.pilot.zibochen.symm_seq_gen_2D: total number of residues per ASU: 75
+apps.pilot.zibochen.symm_seq_gen_2D: interface vector: 300
+apps.pilot.zibochen.symm_seq_gen_2D: chain A changes: [39, 41, 42, 45, 48, 49, 51, 52, 55]
+apps.pilot.zibochen.symm_seq_gen_2D: chain B changes: [1, 4, 5, 7, 8, 11, 63, 66, 67, 70]
+apps.pilot.zibochen.symm_seq_gen_2D: Cn=2, or P3/P4, detecting clashing residues
+apps.pilot.zibochen.symm_seq_gen_2D: residue chanegs in chain A: [39, 41, 42, 45, 48, 49, 51, 52, 55]
+apps.pilot.zibochen.symm_seq_gen_2D: residue chanegs in chain B: [1, 4, 5, 7, 8, 11, 63, 66, 67, 70]
+apps.pilot.zibochen.symm_seq_gen_2D: Cn=2, or P3/P4, copying residues to modular parts
+apps.pilot.zibochen.symm_seq_gen_2D: =========Symmetrizing pose from chain 1 to chain 1
+apps.pilot.zibochen.symm_seq_gen_2D: Vector of changes: [39, 41, 42, 45, 48, 49, 51, 52, 55]
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 39 with residue 39
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 114 with residue 39
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 41 with residue 41
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 116 with residue 41
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 42 with residue 42
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 117 with residue 42
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 45 with residue 45
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 120 with residue 45
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 48 with residue 48
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 123 with residue 48
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 49 with residue 49
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 124 with residue 49
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 51 with residue 51
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 126 with residue 51
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 52 with residue 52
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 127 with residue 52
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 55 with residue 55
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 130 with residue 55
+apps.pilot.zibochen.symm_seq_gen_2D: =========Symmetrizing pose from chain 2 to chain 1
+apps.pilot.zibochen.symm_seq_gen_2D: Vector of changes: [1, 4, 5, 7, 8, 11, 63, 66, 67, 70]
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 1 with residue 1
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 76 with residue 1
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 4 with residue 4
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 79 with residue 4
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 5 with residue 5
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 80 with residue 5
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 7 with residue 7
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 82 with residue 7
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 8 with residue 8
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 83 with residue 8
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 11 with residue 11
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 86 with residue 11
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 63 with residue 63
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 138 with residue 63
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 66 with residue 66
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 141 with residue 66
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 67 with residue 67
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 142 with residue 67
+apps.pilot.zibochen.symm_seq_gen_2D: Working on ASU number 0
+apps.pilot.zibochen.symm_seq_gen_2D: going down the iter at ASU number 0 and replace residue 70 with residue 70
+apps.pilot.zibochen.symm_seq_gen_2D: going up the iter at ASU number 1 and replace residue 145 with residue 70
+apps.pilot.zibochen.symm_seq_gen_2D: Extracting ASU A
+apps.pilot.zibochen.symm_seq_gen_2D: generating full lattice
+core.conformation.symmetry.util: symmetrize_fold_tree(): setting anchor to 57
