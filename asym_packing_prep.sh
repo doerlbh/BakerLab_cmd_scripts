@@ -18,6 +18,8 @@ cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
 
 #cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_donelist | uniq -d > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_uniqdonelist
 
+cp 20160706_uniqdonelist analydone.run;
+
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/6/" 20160706_uniqdonelist > extd_6_ZC31_76.sh;
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/" 20160706_uniqdonelist > extd_5_ZC16_75.sh;
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/4/" 20160706_uniqdonelist > extd_4_5L6HC3_1_85.sh;
@@ -44,23 +46,9 @@ cat extd_6_ZC31_76.sh extd_5_ZC16_75.sh extd_4_5L6HC3_1_85.sh extd_3_2L6HC3_6_74
 #submit jobs to parallel
 cat extractdone.run | parallel -j16 &
 
+ # cd <dir>;/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -out:prefix analysis_ -parser:protocol /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/analysis.xml -s *extracted*pdb -renumber_pdb 1;
 
+sed -i -e 's/^/cd /' analydone.run;
+sed -i 's#$#;/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -out:prefix analysis_ -parser:protocol /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/analysis.xml -s *extracted*pdb -renumber_pdb 1;#' analydone.run;
 
-sed -i -e 's/^/cd /' packing1.run;
-sed -i 's#$#;/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ @/gscratch/baker/zibochen/scripts/xml_and_flags/flatland_final_packing.flags -in:file:silent #' packing1.run;
-cat packing1.run | tr -s " " > packing2.run;
-paste packing2.run sil20160711.list > packing3.run;
-sed -i 's#$#  -parser:script_vars resfile=#' packing3.run;
-paste packing3.run res20160711.list > packing4.run
-sed -i 's#$#;#' packing4.run;
-cat packing4.run | tr -s " " > packing5.run;
-
-
-
-
-sudo pssu --create-set 2Dpacking;
-cat packing5.run |psu --load --sql-set 2Dpacking;
-psu --stat --sql-set 2Dpacking;
-for i in `seq 60`;do qsub submit_packing -q bf;done >JOB_IDs_2Dpacking;
-
- # cd <dir>;/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -out:prefix analysis_ -parser:protocol /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/analysis.xml -s *extracted*pdb -renumber_pdb 1 ;
+cat analydone.run | parallel -j16 &
