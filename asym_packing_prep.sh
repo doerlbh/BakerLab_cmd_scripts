@@ -66,7 +66,14 @@ sed -i 's#$#;python /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extrac
 
 cat replace.run | parallel -j16 &
 
+touch anasc20160714.txt;
+cp analysislist20160714 excelout20160714.sh;
+sed -i -e 's/^/cat /' excelout20160714.sh;
+sed -i 's#$# >> anasc20160714.txt;#' excelout20160714.sh;
+sh excelout20160714.sh;
 
+#in computer
+#scp sunnylin@hyak.washington.edu:/gscratch/stf/sunnylin/160624_flatland_finer_sampling/anasc20160714.txt .;
 
 
 
