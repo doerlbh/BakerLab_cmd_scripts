@@ -1,0 +1,500 @@
+   20  gulp deploy
+   21  gulp nw --version 0.12.3
+   22  cd Dropbox/git/Life-Time-Tracker-0.1.18/
+   23  gulp nw --version 0.12.3
+   24  cd Dropbox/git/Life-Time-Tracker-0.1.18/
+   25  npm install
+   26  bower install
+   27  bower install
+   28  brew update
+   29  npm instll -g bower
+   30  gulp deploy
+   31  curl -kL https://raw.github.com/RosettaCommons/rosetta_clone_tools/master/get_rosetta.sh > get_rosetta.sh && bash get_rosetta.sh
+   32  cd Dropbox/git/Life-Time-Tracker-0.1.17/
+   33  gulp nw --version 0.12.3
+   34  cd Dropbox/git/
+   35  cd Life-Time-Tracker-0.1.17/
+   36  npm install
+   37  bower install
+   38  npm instll -g bower
+   39  gulp deploy
+   40  brew install ruby
+   41  gem update --system 
+   42  gem install jekyll
+   43  ssh -X sunnylin@fw.bakerlab.org
+   44  ssh -X sunnylin@fw.bakerlab.org
+   45  ssh -X sunnylin@fw.bakerlab.org
+   46  /Volumes/Baker\ Lab/work/sunnylin/ABEGO/ABEGO_out_all ; exit;
+   47  ssh -X sunnylin@fw.bakerlab.org
+   48  sudo gem install kramdown
+   49  ssh sunnylin@server.u.washington.edu
+   50  ssh sunnylin@server.u.washington.edu
+   51  ssh netid@server.u.washington.edu
+   52  ssh sunnylin@vergil.u.washington.edu
+   53  /Users/DoerLBH/Dropbox/Courses/2016Win/ME498/Smoothieboard/config ; exit;
+   54  /Users/DoerLBH/Downloads/httrack-3.48.21/install-sh ; exit;
+   55  ssh -X sunnylin@fw.bakerlab.org
+   56  ssh -X sunnylin@fw.bakerlab.org
+   57  ssh -X sunnylin@fw.bakerlab.org
+   58  ssh -X sunnylin@hyak.washington.edu
+   59  ssh -X sunnylin@fw.bakerlab.org
+   60  ssh -X sunnylin@hyak.washington.edu
+   61  ssh -X sunnylin@hyak.washington.edu
+   62  ssh -X sunnylin@hyak.washington.edu
+   63  ssh -X sunnylin@hyak.washington.edu
+   64  ssh -X sunnylin@hyak.washington.edu
+   65  ssh -X sunnylin@hyak.washington.edu
+   66  ssh -X sunnylin@hyak.washington.edu
+   67  ssh zchen@arlo
+   68  ls
+   69  scp get_rosetta.sh sunnylin@hyak.washington.edu:/gscratch/stf/sunnylin
+   70  ssh -X sunnylin@hyak.washington.edu
+   71  ssh -X sunnylin@hyak.washington.edu
+   72  ssh -X sunnylin@hyak.washington.edu
+   73  ssh -X sunnylin@hyak.washington.edu
+   74  ssh -X sunnylin@hyak.washington.edu
+   75  ssh -X sunnylin@hyak.washington.edu
+   76  sudo apt-get install ruby
+   77  sudo gem install rmate
+   78  sudo ssh -R 52698:localhost:52698 sunnylin@hyak.washington.edu
+   79  ls
+   80  find -iname *.ssh
+   81  find -name *.ssh
+   82  find . -iname *.ssh
+   83  cd ./.ssh
+   84  ls
+   85  nano config
+   86  ls
+   87  cat config
+   88  cd sudo wget -O /usr/local/bin/rsub \ https://raw.github.com/aurora/rmate/master/rmate chmod a+x /usr/local/bin/rsub
+   89  sudo wget -O /usr/local/bin/rsub \ https://raw.github.com/aurora/rmate/master/rmate chmod a+x /usr/local/bin/rsub
+   90  cd ..
+   91  sudo wget -O /usr/local/bin/rsub \ https://raw.github.com/aurora/rmate/master/rmate chmod a+x /usr/local/bin/rsub
+   92  brew install wget
+   93  sudo wget -O /usr/local/bin/rsub \ https://raw.github.com/aurora/rmate/master/rmate chmod a+x /usr/local/bin/rsub
+   94  pwd
+   95  ls
+   96  LS
+   97  cd Dropbox
+   98  ls
+   99  top
+  100  ssh -X sunnylin@fw.bakerlab.org
+  101  cd ..
+  102  pwd
+  103  ssh -X sunnylin@fw.bakerlab.org
+  104  cd ~
+  105  rm .ssh/config 
+  106  ls
+  107  ssh -X sunnylin@fw.bakerlab.org
+  108  ssh -X sunnylin@fw.bakerlab.org
+  109  ssh -X sunnylin@fw.bakerlab.org
+  110  ssh -X sunnylin@hyak.washington.edu
+  111  ssh -X sunnylin@fw.bakerlab.org
+  112  pwd
+  113  LS
+  114  cd Dropbox
+  115  ls
+  116  cd Olavarria\ Lab/
+  117  ls
+  118  cd Ephys-Intan/
+  119  ls
+  120  cd test/
+  121  ls
+  122  less albino-012816-S1_160128_114018.rhd 
+  123  less albino-012816-S1_160128_114018.rhd 
+  124  less albino-012816-S1_160128_114018.rhd 
+  125  ls
+  126  cat *.rhd >> combine.rhd
+  127  ls
+  128  less combine.rhd 
+  129  head -n -8 albino-012816-S1_160128_113918.rhd > 29new.rhd;2D;2D;2D
+  130  tail -n +1 albino-012816-S1_160128_113918.rhd | head -n -8 > 39new.rhd
+  131  ls
+  132  cat 29new.rhd 
+  133  rm 29new.rhd 39new.rhd 
+  134  ls
+  135  cat combine.rhd 
+  136  cd .ssh
+  137  ls
+  138  nano config
+  139  ls
+  140  cat config 
+  141  ssh sunnylin@fw.bakerlab.org
+  142  ssh sunnylin@fw.bakerlab.org
+  143  ssh sunnylin@fw.bakerlab.org
+  144  ssh sunnylin@hyak.washington.edu
+  145  ssh sunnylin@hyak.washington.edu
+  146  ssh -X sunnylin@fw.bakerlab.org
+  147  ssh -X sunnylin@fw.bakerlab.org
+  148  ssh sunnylin@hyak.washington.edu
+  149  ssh sunnylin@hyak.washington.edu
+  150  brew install git-lfs
+  151  git lfs install
+  152  git lfs track "*.psd"
+  153  cd Dropbox/git/OLab_IntanEphys/
+  154  ls
+  155  git lfs track "*.rhd"
+  156  git add *.rhd
+  157  git commit -m "add rhd file"
+  158  git push origin master
+  159  git lfs install
+  160  pwd
+  161  git lfs track "*.rhd"
+  162  git add *.rhd
+  163  git commit -m "add rhd file"
+  164  git push origin master
+  165  git add *.rhd
+  166  git push origin master
+  167  pwd
+  168  git lfs track "*.rhd"
+  169  ls
+  170  cd ..
+  171  pwd
+  172  cd OLab_IntanEphys
+  173  ls
+  174  git lfs track "*.rhd"
+  175  git add *.rhd
+  176  git add *.rhd
+  177  git commit -m "add rhd file"
+  178  git push origin master
+  179  pwd
+  180  cd Dropbox/git/
+  181  ls
+  182  mkdir Rosetta
+  183  cd Rosetta/
+  184  curl -kL https://raw.github.com/RosettaCommons/rosetta_clone_tools/master/get_rosetta.sh > get_rosetta.sh && bash get_rosetta.sh
+  185  curl -kL https://raw.github.com/RosettaCommons/rosetta_clone_tools/master/get_rosetta.sh > get_rosetta.sh && bash get_rosetta.sh
+  186  ls
+  187  cd Rosetta/
+  188  ls
+  189  cd ..
+  190  cd ..
+  191  rm Rosetta/
+  192  rm -r Rosetta/
+  193  curl -kL https://raw.github.com/RosettaCommons/rosetta_clone_tools/master/get_rosetta.sh > get_rosetta.sh && bash get_rosetta.
+  194  curl -kL https://raw.github.com/RosettaCommons/rosetta_clone_tools/master/get_rosetta.sh > get_rosetta.sh && bash get_rosetta.sh
+  195  brew install qt5
+  196  cd Dropbox/git/OLab_IntanEphys/
+  197  git config --global user.name "doerlbh"
+  198  git config --global user.email "doerlbh@gmail.com"
+  199  ssh-keygen -t rsa -b 4096 -C "doerlbh@gmail.com"
+  200  eval "$(ssh-agent -s)"
+  201  ssh-add ~/.ssh/id_rsa
+  202  ls -al ~/.ssh
+  203  pbcopy < ~/.ssh/id_rsa.pub
+  204  ls
+  205  git config --list
+  206  git add *.m
+  207  git commit -m 'update codes of different versions'
+  208  git status
+  209  git push origin master
+  210  git status
+  211  git lfs track "*.rhd"
+  212  git add *.rhd
+  213  git commit -m "add data file"
+  214  git push origin master
+  215  git push origin master
+  216  git add *.rhd
+  217  git commit -m "add data file"
+  218  git push origin master
+  219  git push origin master
+  220  git push origin master
+  221  git push origin master
+  222  git push origin master
+  223  git status
+  224  cd Dropbox/git/
+  225  git status
+  226  cd OLab_IntanEphys/
+  227  git status
+  228  cd Dropbox
+  229  LS
+  230  ls
+  231  cd git/
+  232  ls
+  233  cd Dropbox
+  234  ls
+  235  cd Courses/
+  236  ls
+  237  cd ../Modeling\ Project/
+  238  ls
+  239  cd Ebola_Model/
+  240  ls
+  241  cd ..
+  242  find -name *bioterr* /
+  243  find / -name *bioterr
+  244  find . -name *bioterr
+  245  find . -name *bioterro
+  246  cd Dropbox/git/OLab_IntanEphys/
+  247  ls
+  248  git add *.m
+  249  git add *.m
+  250  git commit -m "add readIntan file"
+  251  git push origin master
+  252  git status
+  253  cd Dropbox/git/OLab_IntanEphys/
+  254  git add *.m
+  255  git commit -m "add readIntan_combine file"
+  256  git push origin master
+  257  ls path *.rhd
+  258  ls / *.rhd
+  259  ls /Users/DoerLBH/Dropbox/git/OLab_IntanEphys/Data/Normal-012616/ *.rhd
+  260  Ll
+  261  ls
+  262  dir
+  263  cd Dropbox/git/OLab_patch_processor
+  264  ls
+  265  git status
+  266  git push origin master
+  267  git push origin master
+  268  cd Dropbox/git/OLab_patch_processor_2.0/
+  269  ls
+  270  LS
+  271  ls .DS_Store 
+  272  cat .DS_Store 
+  273  rm .DS_Store 
+  274  ls
+  275  rm README.md 
+  276  ls
+  277  ls .git/
+  278  rm .git/
+  279  rm -r .git/
+  280  ls
+  281  ls 
+  282  ls
+  283  cd ..
+  284  ls 
+  285  cd Patch\ Processor/
+  286  ls
+  287  cd .gitignore 
+  288  rm .gitignore 
+  289  cat .project 
+  290  cat .DS_Store 
+  291  ll .DS_Store 
+  292  cat .classpath 
+  293  cat .settings/
+  294  cd .settings/
+  295  ls
+  296  cat org.eclipse.jdt.core.prefs 
+  297  cd ..
+  298  cd ../
+  299  pwd
+  300  cd DoerLBH/Dropbox
+  301  cd Eclipse/
+  302  ls
+  303  cd workspace
+  304  ls
+  305  cd Patch\ Processor
+  306  ls
+  307  cat .gitignore 
+  308  rm .gitignore 
+  309  cd ..
+  310  cd ~
+  311  pwd
+  312  cd Dropbox/git/OLab_patch_processor_2.0/
+  313  git lfs install
+  314  git lfs track ".exe"
+  315  git lfs track ".jar"
+  316  git lfs track ".jar"
+  317  git add *.exe
+  318  git commit -m "add exe file"
+  319  git add *.jar
+  320  git commit -m "add jar file"
+  321  git push origin master
+  322  add *
+  323  add 
+  324  git add *
+  325  git commit -m "add other supporting codes and data"
+  326  git push origin master
+  327  git status
+  328  cd Dropbox/git/OLab_patch_processor_2.0/
+  329  git status
+  330  git push origin HEAD
+  331  git push --help
+  332  cat "/Users/DoerLBH/Dropbox/git/OLab_patch_processor_2.0/.git/rebase-apply
+  333  cd Dropbox/git/OLab_patch_processor_2.0/
+  334  git push origin master
+  335  git push origin HEAD
+  336  rm -fr "/Users/DoerLBH/Dropbox/git/OLab_ssor_2.0/.git/rebase-apply
+  337  rm -rf "/Users/DoerLBH/Dropbox/git/OLab_patch_processor_2.0/.git/rebase-apply
+  338  "
+  339  cd /Users/DoerLBH/Dropbox/git/OLab_patch_processor_2.0/.git/
+  340  ls
+  341  rm -fr "/Users/DoerLBH/Dropbox/git/OLab_patch_processor_2.0/.git/rebase-apply"
+  342  ls
+  343  cd Dropbox/git/OLab_patch_processor_2.0/
+  344  git status
+  345  git push orgin master
+  346  git push origin master
+  347  git push origin master
+  348  cd Dropbox/git/OLab_patch_processor_2.0/
+  349  git reset --soft master
+  350  git status
+  351  git reset --soft origin/master
+  352  git status
+  353  git lfs track "*.jar"
+  354  git lfs track "*.exe"
+  355  git lfs track "*.exe"
+  356  git lfs install
+  357  git lfs track "*.exe"
+  358  git lfs track "*.jar"
+  359  git add *.java
+  360  git commit -m "add java files"
+  361  git push origin master
+  362  cd Dropbox/git/OLab_patch_processor_2.0/
+  363  git lfs install
+  364  git reset --soft origin/master
+  365  git status
+  366  cd Dropbox/git/OLab_patch_processor_2.0/
+  367  git status
+  368  git add Patch Processor/test.xls
+  369  git add Patch\ Processor/test.xls
+  370  git commit -m "add test file"
+  371  git push origin master
+  372  cd Dropbox/git/OLab_patch_processor_2.0/
+  373  git status
+  374  git reset --soft origin/master
+  375  git status
+  376  cd Dropbox/git/OLab_patch_processor_2.0/
+  377  git status
+  378  cat Patch\ Processor/test.xls 
+  379  git add Patch\ Processor/test.xls
+  380  git status
+  381  git commit -m "add test file"
+  382  git status
+  383  git reset --soft origin/master
+  384  git status
+  385  cd Dropbox/git/OLab_patch_processor_2.0/
+  386  git status
+  387  git lfs install
+  388  git lfs track "*.cab"
+  389  git status
+  390  git lfs track "*.cab"
+  391  ls *.cab
+  392  ls / *.cab
+  393  find . *.cab
+  394  find . -name "*.cab"
+  395  git add "*.cab"
+  396  git commit -m "add cab files"
+  397  git push origin master
+  398  cd Dropbox/git/OLab_patch_processor_2.0/
+  399  git status
+  400  git add <file>
+  401  git add Patch\ Processor/bin/readMe.txt 
+  402  cd Dropbox/git/OLab_patch_processor_2.0/
+  403  ls
+  404  ls .DS_Store 
+  405  cat .DS_Store 
+  406  cd ..
+  407  cd ../Eclipse/workspace
+  408  ls
+  409  cd Dropbox/git/OLab_patch_processor_2.0/
+  410  cd Dropbox/git/OLab_patch_processor_2.0/
+  411  cd ..
+  412  cd ..
+  413  cd Dropbox/git/OLab_patch_processor_2.0/
+  414  cd ..
+  415  cd Dropbox/git/OLab_patch_processor_2.0/
+  416  cd ../OLab_patch_processor_2.0_copy/
+  417  ls
+  418  ls .git
+  419  rm -r .git
+  420  rm -rf .git
+  421  rm -rf .gitattributes 
+  422  cd Patch\ Processor/
+  423  ls
+  424  cd ..
+  425  find / -name "git" 
+  426  find . -name "git" 
+  427  find . -name "git" 
+  428  find ./  -name "git" 
+  429  find ./  -name "class" 
+  430  find /  -name "class" 
+  431  find .  -name "class" 
+  432  find / -name "git" 
+  433  find Patch\ Processor/ -name "git" 
+  434  cd ../OLab_patch_processor_2.0
+  435  ls
+  436  git status
+  437  git lfs install
+  438  git lfs track "*.jar"
+  439  git lfs track "*.exe"
+  440  git lfs track "*.cab"
+  441  ls
+  442  git add "*.cab"
+  443  git commit -m "Add cab files"
+  444  git push origin master
+  445  git add "*.jar"
+  446  git commit -m "Add jar files"
+  447  git push origin master
+  448  git push origin master
+  449  git push origin master
+  450  git pull
+  451  git commit
+  452  -F
+  453  git commit -m
+  454  git commit -m "?"
+  455  git push origin master
+  456  git status
+  457  git lfs install
+  458  git lfs track "*.exe"
+  459  git add "*.exe"
+  460  git commit -m "add exe file"
+  461  git push origin master
+  462  git status
+  463  git add "*.txt"
+  464  git commit -m "add txt file"
+  465  git push origin master
+  466  git add "*.dll"
+  467  git commit -m "add dll files"
+  468  git push origin master
+  469  git add 
+  470  git add *
+  471  git commit -m "add data files and other supporting codes"
+  472  git push origin master
+  473  git status
+  474  git add .DS_Store 
+  475  git add .gitattributes 
+  476  git commit -m "add remaining git files"
+  477  git push origin master
+  478  git status
+  479  cd ..
+  480  ssh -X sunnylin@fw.bakerlab.org
+  481  cd .bash_sessions/
+  482  ls
+  483  cd ..
+  484  nano .bash_profile
+  485  source .bash_profile
+  486  LS
+  487  ls
+  488  cd ..
+  489  pwd
+  490  ls
+  491  pwd
+  492  cd ..
+  493  b
+  494  cd Users/
+  495  b
+  496  nano .bash_profile
+  497  source .bash_profile
+  498  ls
+  499  nano .bash_profile
+  500  ls
+  501  LS
+  502  source .bash_profile
+  503  LS
+  504  nano .bash_profile
+  505  source .bash_profile
+  506  ls
+  507  LS
+  508  nano .bash_profile
+  509  source .bash_profile
+  510  ls
+  511  ls
+  512  ls
+  513  ls
+  514  ls
+  515  rm -rf .bash_profile
+  516  ls
+  517  pwd
+  518  cd Dropbox
+  519  history > history20160422

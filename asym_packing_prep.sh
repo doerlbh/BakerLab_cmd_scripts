@@ -5,9 +5,9 @@
 
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
 
-#find `pwd` -name "*lattice.silent" > sil20160711.list 
-#find `pwd` -name "*lattice.res" > res20160711.list 
-#for i in `cat sil20160711.list`;do dirname $i;done > sildir20160711.list
+find `pwd` -name "packed*.pdb" > packed20160712.list 
+
+for i in `cat packed20160712.list`;do dirname $i;done > packeddir20160712.list
 
 #wc -l res20160711.list 
 #wc -l sil20160711.list 
@@ -16,9 +16,9 @@ cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
 #sed -i -e "s/^/cp /" backup_res.sh 
 #sed -i 's#$# ./backupres20160711; #' backup_res.sh 
 
-#cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_donelist | uniq -d > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160706_uniqdonelist
+#cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/packed20160712.list | uniq -d > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/packed20160712.list
 
-cp 20160706_uniqdonelist analydone.run;
+cp packeddir20160712 analydone.run;
 
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/6/" 20160706_uniqdonelist > extd_6_ZC31_76.sh;
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/" 20160706_uniqdonelist > extd_5_ZC16_75.sh;
