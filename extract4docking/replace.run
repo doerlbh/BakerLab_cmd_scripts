@@ -1,0 +1,1 @@
+cd <dir>;python ~/scripts/replace.py analysis_score.sc `pwd`;

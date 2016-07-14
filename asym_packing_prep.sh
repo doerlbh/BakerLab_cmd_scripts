@@ -9,7 +9,6 @@ find `pwd` -name "*extracted_adjacent.pdb" > clrjunk.sh;
 sed -i -e 's/^/rm /' clrjunk.sh;
 sh clrjunk.sh;
 
-
 find `pwd` -name "packed*.pdb" > packed20160712.list;
 for i in `cat packed20160712.list`;do dirname $i;done > packeddir20160712.list;
 cat packeddir20160712.list | uniq -d > packdir20160712uniq.list;
@@ -24,6 +23,7 @@ cat packeddir20160712.list | uniq -d > packdir20160712uniq.list;
 #cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/packed20160712.list | uniq -d > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/packed20160712.list
 
 cp packdir20160712uniq.list analydone.run;
+cp packdir20160712uniq.list replace.run;
 
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/6/" packdir20160712uniq.list > extd_6_ZC31_76.sh;
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/" packdir20160712uniq.list > extd_5_ZC16_75.sh;
@@ -57,3 +57,20 @@ sed -i -e 's/^/cd /' analydone.run;
 sed -i 's#$#;/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -out:prefix analysis_ -parser:protocol /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/analysis.xml -s *extracted*pdb -renumber_pdb 1;#' analydone.run;
 
 cat analydone.run | parallel -j16 &
+
+#cd <dir>;python /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/replace.py analysis_score.sc `pwd`;
+# cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/1/89/291;python /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/replace.py analysis_score.sc `pwd`;
+
+sed -i -e 's/^/cd /' replace.run;
+sed -i 's#$#;python /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/replace.py analysis_score.sc `pwd`;#' replace.run;
+
+cat replace.run | parallel -j16 &
+
+
+
+
+
+
+
+
+
