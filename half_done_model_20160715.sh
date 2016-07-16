@@ -17,19 +17,21 @@
 
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
 
-rm -r 20160706_*;
-
 find `pwd` -name "HBNet_*.pdb" > 20160715_pdblist;
 for i in `cat 20160715_pdblist `;do dirname $i;done > 20160715_dirlist;
 
-comm -23 20160715_dirlist 20160706_donelist > 20160715only_dirlist
+cat 20160715_dirlist | uniq -d > 20160715_uniqdirlist;
+sort 20160715_uniqdirlist > 20160715_uniqdirlistsorted;
+sort 20160706_uniqdonelist > 20160706_uniqdonelistsorted;
 
-for i in `cat 20160715only_dirlist`; 
+comm -23 20160715_uniqdirlistsorted 20160706_uniqdonelistsorted > 20160715only_dirlist;
+
+for i in `cat 20160715only_dirlist`
 	do cd $i;
 		if [ -f done ];
 			then echo `pwd` >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160715_donelist;
-				find `pwd` -name "HBNet_*.pdb" >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160715_modelpdblist
-				find `pwd` -name "HBNet_*.res" >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160715_modelreslist
+				find `pwd` -name "HBNet_*.pdb" >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160715_modelpdblist;
+				find `pwd` -name "HBNet_*.res" >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160715_modelreslist;
 			else echo `pwd` >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160715_unfinishedlist;
 		fi;
 	cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;

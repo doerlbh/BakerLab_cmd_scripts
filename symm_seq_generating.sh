@@ -3,9 +3,6 @@
 #Date: July 2016
 #Lab: Baker Lab
 
-
-cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160715_donelist | uniq -d > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160715_uniqdonelist;
-
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/" 20160715_uniqdonelist > 20160715_uniqdonelist_C2;
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/6/" 20160715_uniqdonelist >> 20160715_uniqdonelist_C2;
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/4/" 20160715_uniqdonelist > 20160715_uniqdonelist_C3;
