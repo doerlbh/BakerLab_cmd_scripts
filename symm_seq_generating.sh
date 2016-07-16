@@ -4,7 +4,6 @@
 #Lab: Baker Lab
 
 
-
 cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160715_donelist | uniq -d > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/20160715_uniqdonelist;
 
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/" 20160715_uniqdonelist > 20160715_uniqdonelist_C2;
