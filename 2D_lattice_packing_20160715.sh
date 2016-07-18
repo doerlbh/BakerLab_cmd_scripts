@@ -71,7 +71,7 @@ rsub packing5_2.run;
 #sudo pssu --create-set 2Dpacking;
 cat packing5_2.run |psu --load --sql-set 2Dpacking;
 psu --stat --sql-set 2Dpacking;
-for i in `seq 5`;do qsub submit_packing_2 --W group_list=hyak-stf;done >JOB_IDs_2Dpacking_2;
+for i in `seq 5`;do qsub submit_packing_2 -W group_list=hyak-stf;done >JOB_IDs_2Dpacking_2;
 
 # cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/1/89/203 ;/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ @/gscratch/baker/zibochen/scripts/xml_and_flags/flatland_final_packing.flags -in:file:silent 	/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/1/89/203/HBNet_C211_C211_62.2_47.8_740_A_ZC16_adjacent_0001_0001_designed_full_lattice.silent  -parser:script_vars resfile=	/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/1/89/203/HBNet_C211_C211_62.2_47.8_740_A_ZC16_adjacent_0001_0001_designed_full_lattice.res
 
