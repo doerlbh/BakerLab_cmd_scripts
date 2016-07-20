@@ -17,7 +17,7 @@ rm C3_res_20160720;
 mv C3only_res_20160720 C3_res_20160720;
 
 cp C3_res_20160720 C3_B2A_20160720.sh;
-sed -i -e "s#^#sed -i \'s/silent/res/g\' #" C3_B2A_20160720.sh;
+sed -i -e "s#^#sed -i \'s/B/A/g\' #" C3_B2A_20160720.sh;
 sh C3_B2A_20160720.sh;
 
 for i in `cat C3_res_20160720`;do dirname $i;done > C3_dirres_20160720
@@ -40,4 +40,4 @@ cat packing4_3.run | tr -d '\011' > packing5_3.run;
 #sudo pssu --create-set 2Dpacking;
 cat packing5_3.run |psu --load --sql-set 2Dpacking;
 psu --stat --sql-set 2Dpacking;
-for i in `seq 10`;do qsub submit_packing_2 -W group_list=hyak-stf;done >JOB_IDs_2Dpacking_2;
+for i in `seq 5`;do qsub submit_packing_3 -W group_list=hyak-stf;done >JOB_IDs_2Dpacking_3;
