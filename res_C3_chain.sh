@@ -31,6 +31,7 @@ sed -i 's#$#  -parser:script_vars resfile=#' packing3_3.run;
 paste packing3_3.run C3_res_20160720 > packing4_3.run
 sed -i 's#$#;#' packing4_3.run;
 cat packing4_3.run | tr -s " " > packing5_3.run;
+sed -i 's/^\t*$//g' packing5_3.run
 rsub packing5_3.run;
 
 #sudo pssu --create-set 2Dpacking;
