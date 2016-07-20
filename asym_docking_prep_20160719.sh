@@ -26,12 +26,12 @@ cat packeddir20160719.list | uniq -d > packdir20160719uniq.list;
 
 cp packdir20160719uniq.list analyreplace.run;
 
-grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/6/" packdir20160712uniq.list > extd_6_ZC31_76.sh;
-grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/" packdir20160712uniq.list > extd_5_ZC16_75.sh;
-grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/4/" packdir20160712uniq.list > extd_4_5L6HC3_1_85.sh;
-grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/3/" packdir20160712uniq.list > extd_3_2L6HC3_6_74.sh;
-grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/2/" packdir20160712uniq.list > extd_2_2L6HC3_13_74.sh;
-grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/1/" packdir20160712uniq.list > extd_1_2L6HC3_12_74.sh;
+grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/6/" packdir20160719uniq.list > extd_6_ZC31_76.sh;
+grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/" packdir20160719uniq.list > extd_5_ZC16_75.sh;
+grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/4/" packdir20160719uniq.list > extd_4_5L6HC3_1_85.sh;
+grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/3/" packdir20160719uniq.list > extd_3_2L6HC3_6_74.sh;
+grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/2/" packdir20160719uniq.list > extd_2_2L6HC3_13_74.sh;
+grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/1/" packdir20160719uniq.list > extd_1_2L6HC3_12_74.sh;
 
 # cd <dir>;for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj.sh $i packed_${i/.pdb/}*designed_full_lattice* <monomer_length>;done
 
@@ -67,7 +67,9 @@ cat analyreplace.run | parallel -j16 &
 
 #cat replace.run | parallel -j16 &
 
+cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
 touch anasc20160719.txt;
+find `pwd` -name "analysis_score.sc" > analysislist20160719;
 cp analysislist20160719 excelout20160719.sh;
 sed -i -e 's/^/cat /' excelout20160719.sh;
 sed -i 's#$# >> anasc20160719.txt;#' excelout20160719.sh;
