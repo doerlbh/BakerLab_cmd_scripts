@@ -16,10 +16,14 @@ grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/1/" C3_res_20160720 
 rm C3_res_20160720;
 mv C3only_res_20160720 C3_res_20160720;
 
+cp C3_res_20160720 C3_B2A_20160720.sh;
+sed -i -e "s#^#sed -i \'s/silent/res/g\' #" C3_B2A_20160720.sh;
+sh C3_B2A_20160720.sh;
+
 for i in `cat C3_res_20160720`;do dirname $i;done > C3_dirres_20160720
 cp C3_res_20160720 C3_sil_20160720;
 sed -i 's/res/silent/g' C3_sil_20160720;
-cp C3_dirres_20160720 packing1_3.run
+cp C3_dirres_20160720 packing1_3.run;
 
 # redo 2Dpacking
 
@@ -30,9 +34,8 @@ paste packing2_3.run C3_sil_20160720 > packing3_3.run;
 sed -i 's#$#  -parser:script_vars resfile=#' packing3_3.run;
 paste packing3_3.run C3_res_20160720 > packing4_3.run
 sed -i 's#$#;#' packing4_3.run;
-cat packing4_3.run | tr -s " " > packing5_3.run;
-sed -i 's/^\t*$//g' packing5_3.run
-rsub packing5_3.run;
+cat packing4_3.run | tr -d '\011' > packing5_3.run;
+#rsub packing5_3.run;
 
 #sudo pssu --create-set 2Dpacking;
 cat packing5_3.run |psu --load --sql-set 2Dpacking;
