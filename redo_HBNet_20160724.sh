@@ -7,11 +7,12 @@
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/1/1/11/2;sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/run.sh;
 
 now=$(date +"%Y%m%d")
-
 find `pwd` -name "done" > done.$now;
 for i in `cat done.$now`;do dirname $i;done > donedir.$now;
-for i in  `cat donedir.$now`; do if [ -f HBNet*.pdb];  echo HBNet*.pdb; fi; done
-
+for i in  `cat donedir.$now`; do if [ -f HBNet*.pdb ]; then echo HBNet*.pdb; fi; done
+if [ -f HBNet*.pdb ]; then echo $HBNet*.pdb; fi;
+	if [ -f *.pdb ]; then echo *.pdb; fi;
+		if ![ -f *.pdb ]; then echo nothing; fi;
  >> 20160706_donelist; echo `pwd` >> 20160706_unfinishedlist; fi
 
 
