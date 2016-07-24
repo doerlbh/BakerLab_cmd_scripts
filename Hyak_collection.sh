@@ -17,3 +17,32 @@
  cat symm_seq.run | parallel -j16 &
 
  for i in `cat JOB_IDs_2Dpacking`;do qdel $i;done
+
+
+showq -w group=hyak-baker
+showq -w user=dalonso
+showq -w class=batch:group=hyak-baker   -v
+showq -w class=batch:group=hyak-baker
+showq -w class=bf:group=hyak-baker
+showq -w class=batch:group=hyak-baker
+showq -i   <- priorities
+showq -i -w class=batch:group=hyak-baker
+showq -i -w qos=baker
+
+
+msub -l walltime=04:00:00 -I  (interactive)
+msub -q bf bf2.sh
+checkjob Moab.58201
+mjboctl -c 58201
+mjboctl -c Moab.58201
+
+#Individual quotas:
+
+   mmlsquota -u sunnylin --block-size G gscratch | grep hyak-baker
+   mmlsquota -u sunnylin gscratch:hyak-baker --block-size G
+   mmlsquota -u sunnylin gscratch:hyak-baker --block-size Auto
+   
+mmlsquota -j hyak-baker collab
+mmlsquota -j hyak-baker archive
+mmlsquota -j hyak-baker gscratch --block-size G   
+mmlsquota -j hyak-baker archive --block-size Auto    <--**new and useful**
