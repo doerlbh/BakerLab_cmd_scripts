@@ -22,7 +22,7 @@ done
 
 cp fakedonedir.$now redo_$now.sh 
 sed -i -e 's/^/cd /' redo_$now.sh;
-sed -i 's#$#; ;sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/run.sh;#' redo_$now.sh;
+sed -i 's#$#; sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/run.sh;#' redo_$now.sh;
 
 
 sudo pssu --create-set redoHBNet;
@@ -31,7 +31,7 @@ cat redo_$now.sh |psu --load --sql-set redoHBNet;
 
 psu --stat --sql-set redoHBNet;
  
-for i in `seq 10`;do qsub submit_redo_stf -W group_list=hyak-stf;done >>JOB_IDs_redoHBNet
-for i in `seq 20`;do qsub submit_redo_baker -W group_list=hyak-baker;done >>JOB_IDs_redoHBNet
+for i in `seq 10`;do qsub submit_redo_stf -W group_list=hyak-stf;done >>JOB_IDs_redoHBNet;
+for i in `seq 20`;do qsub submit_redo_baker -W group_list=hyak-baker;done >>JOB_IDs_redoHBNet;
 
 
