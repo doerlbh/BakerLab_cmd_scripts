@@ -9,11 +9,12 @@
 now=$(date +"%Y%m%d")
 find `pwd` -name "done" > done.$now;
 for i in `cat done.$now`;do dirname $i;done > donedir.$now;
+
 for i in  `cat donedir.$now`; 
 do cd $i; 
 #echo inside $i; 
 if ! [ -f HBNet*.pdb ]; 
-then echo `pwd` >> fakedonedir.$now; 
+then echo `pwd` >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/fakedonedir.$now; 
 #else echo yes there is HBNet; 
 fi;
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/; 
@@ -32,3 +33,5 @@ psu --stat --sql-set redoHBNet;
  
 for i in `seq 10`;do qsub submit_redo_stf -W group_list=hyak-stf;done >>JOB_IDs_redoHBNet
 for i in `seq 20`;do qsub submit_redo_baker -W group_list=hyak-baker;done >>JOB_IDs_redoHBNet
+
+
