@@ -2,47 +2,21 @@
 # Baihan Lin, July 2015
 # Baker Lab
 
-
-
-
-for i in *asymdock;do
-	cd $i
-	python /work/sunnylin/scripts/boinc/1_copy_results_from_boinc.py
-	sh /work/sunnylin/scripts/boinc/2_get_pdb_from_silent.sh
-	gnuplot <<\EOF
-		set xrange [0:20]
-		set yrange [:-300]
-		set terminal png
-		set output 'rms_Isc.png'
-		plot 'rms_Isc.sc' u 1:2 w p
-		set terminal png
-		set output 'rms_score.png'
-		set yrange [:-300]
-		plot 'rms_score.sc' u 1:2 w p
-		set terminal png
-		set output 'local_rms_Isc.png'
-		set  yrange [:-300]
-		plot 'local_rms_Isc.sc' u 1:2 w p
-		set terminal png
-		set output 'local_rms_score.png'
-		set yrange [:-300]
-		plot 'local_rms_score.sc' u 1:2 w p
-EOF
-	cd ../
-done
+cd /work/sunnylin/self_assembly_design/asym_docking_pdbs_20160722;
 
 for i in *pdb;do
-	cd $i-asymdock;
-	num = 
-	string = A__$num_2016
-	cp /net/BOINC/results/A__${string:0:8}/
-
+	num=${i%.*};
+	cd $num-asymdock;
+	folder=A__${num}_2016
+	cp /net/BOINC/results/${folder:0:8}/*.sc.bz2 .;
+	bzip2 -d *.bz2;
+	cat *split_*.sc >> $num_all_plot.sc;
 
 	gnuplot <<\EOF
 		set xrange [0:20]
 		set terminal png
-		set output $i_rms_sc.png
-		plot 'all_plot.sc' u 2:31 w p
-		EOF
+		set output $num_rms_sc.png
+		plot $num_all_plot.sc u 2:31 w p
+EOF
 	cd ../
 done
