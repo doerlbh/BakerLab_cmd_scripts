@@ -20,9 +20,10 @@ fi;
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/; 
 done
 
+
 cp fakedonedir.$now redo_$now.sh 
 sed -i -e 's/^/cd /' redo_$now.sh;
-sed -i 's#$#; sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/run.sh;#' redo_$now.sh;
+sed -i 's#$#;rm done; sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/run.sh;#' redo_$now.sh;
 
 
 sudo pssu --create-set redoHBNet;
