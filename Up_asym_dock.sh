@@ -43,5 +43,5 @@ done
 # PLAN B
 cd dir_new/
 sh ../patch_dock_new_01_generate_dockings.bash list sunnylin
-sh ../patch_dock_new_02_generate_dockings.bash sunnylin
+sh ../patch_dock_new_02_submit_to_boinc.bash sunnylin
 
