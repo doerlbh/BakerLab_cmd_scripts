@@ -10,13 +10,31 @@ for i in *pdb;do
 	folder=A__${num}_2016
 	cp /net/BOINC/results/${folder:0:8}/*.sc.bz2 .;
 	bzip2 -d *.bz2;
-	cat *split_*.sc >> $num_all_plot.sc;
-
+	cat *split_*.sc >> ${num}_all_plot.sc;
+	cp ${num}_all_plot.sc all_plot.sc
 	gnuplot <<\EOF
 		set xrange [0:20]
+		set yrange [:-300]
 		set terminal png
-		set output $num_rms_sc.png
-		plot $num_all_plot.sc u 2:31 w p
+		set output 'rms_sc.png'
+		plot 'all_plot.sc' u 31:2 w p
 EOF
+cp rms_sc.png ${num}_rms_sc.png
 	cd ../
+done
+
+
+for i in *pdb;do
+num=${i%.*};
+cd $num-asymdock;
+cp ${num}_all_plot.sc all_plot.sc
+gnuplot <<\EOF
+set xrange [0:20]
+set yrange [:-300]
+set terminal png
+set output 'rms_sc.png'
+plot 'all_plot.sc' u 31:2 w p
+EOF
+cp rms_sc.png ${num}_rms_sc.png
+cd ../
 done
