@@ -3,6 +3,8 @@
 # modified from Zibo Chen's setup and submit
 # all you need is to put all pdbs (both chains in a single pdb) into current wd
 
+# PLAN A
+
 rm cmd_list
 
 #sh /work/sunnylin/self_assembly_design/get_A_and_B_separate.sh
@@ -37,4 +39,9 @@ echo submitting...
 /work/robetta/workspace/labFragPicker_DO_NOT_REMOVE/bakerlab_scripts/boinc/submit_to_boinc.py run.docking.boinc
 cd ../
 done
+
+# PLAN B
+cd dir_new/
+sh ../patch_dock_new_01_generate_dockings.bash list sunnylin
+sh ../patch_dock_new_02_generate_dockings.bash sunnylin
 
