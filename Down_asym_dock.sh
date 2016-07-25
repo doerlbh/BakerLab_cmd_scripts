@@ -87,3 +87,16 @@ EOF
 cp Irms_I_sc.png ${num}_Irms_I_sc.png
 cd ../
 done
+
+
+num=13;
+cd $num-asymdock;
+gnuplot <<\EOF
+set xrange [0:25]
+set yrange [-30:0]
+set terminal png
+set output 'Irms_I_sc.png'
+plot 'all_plot.sc' u 25:24 w p
+EOF
+cp Irms_I_sc.png ${num}_Irms_I_sc.png
+cd ../
