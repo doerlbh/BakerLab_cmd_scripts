@@ -25,7 +25,6 @@ done
 
 for i in */; do
 	cd $i;
-
-/work/zibochen/Rosetta/main/source/bin/rosetta_scripts.default.linuxgccrelease -s input.pdb @heterodimer_final_design.flags -parser:protocol *.xml
+/work/zibochen/Rosetta/main/source/bin/rosetta_scripts.default.linuxgccrelease -s *.pdb @heterodimer_final_design.flags -parser:protocol *.xml
 cd ../;
 done
