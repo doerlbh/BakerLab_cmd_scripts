@@ -32,3 +32,5 @@ cp analysislist$now excelout$now.sh;
 sed -i -e 's/^/cat /' excelout$now.sh;
 sed -i 's#$# >> anasc$now.txt;#' excelout$now.sh;
 sh excelout$now.sh;
+
+cp analysis_score.sc anasc$now.txt
