@@ -10,6 +10,8 @@ for i in *pdb;do
 	cp ../design.res ${i%.*}_design.res;
 	cp ../heterodimer_final_design.flags .;
 	cp ../heterodimer_final_design.xml ${i%.*}_heterodimer_final_design.xml;
+	sed -i 's#/work/sunnylin/self_assembly_design/modeltest/4_remove_met_trp/design.res#/work/sunnylin/self_assembly_design/modeltest/4_remove_met_trp/${i%.*}/${i%.*}_design.res#g' ${i%.*}_heterodimer_final_design.xml;
+	grep "MET A" $i > res_change;
 
 done
 
