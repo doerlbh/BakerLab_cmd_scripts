@@ -1,0 +1,1000 @@
+   90  nano rename_boinc.sh 
+   91  info cp
+   92  nano rename_boinc.sh 
+   93  cd ../domain_swap_heterodimer/18A19B/run/
+   94  ls
+   95  nan
+   96  nano
+   97  cp ../../../
+   98  cd ../../../fold_boinc_domain_swap/
+   99  ls
+  100  cd ../domain_swap_heterodimer/18A19B/run/
+  101  cp ../../../fold_boinc_domain_swap/rename_boinc.sh ./
+  102  ls
+  103  nano rename_boinc.sh 
+  104  sh rename_boinc.sh 
+  105  cat rename_boinc.sh 
+  106  cd ..
+  107  ls
+  108  cat run_remodel.sh 
+  109  cat setup.sh 
+  110  cd domain_swap_heterodimer/18A19B/run/
+  111  sh ../../setup.sh &
+  112  LS
+  113  ls
+  114  pwd
+  115  source ~zibochen/.bash
+  116  source ~zibochen/.bashrc
+  117  LS
+  118  freedigs 
+  119  l
+  120  S
+  121  LS
+  122  LS ?
+  123  LS ?/log
+  124  LS ??/log
+  125  LS 11/log
+  126  LS 21/log
+  127  LS 22/log
+  128  LS 23/log
+  129  cd 23
+  130  LS
+  131  b
+  132  LS 1
+  133  LS
+  134  ls
+  135  LS 100
+  136  ls
+  137  LS
+  138  ls
+  139  LS
+  140  cd 350
+  141  ls
+  142  LS
+  143  tail log 
+  144    b
+  145  LS
+  146  LS 101
+  147  ls
+  148  b
+  149  LS
+  150  mkdir finished
+  151  LS
+  152  cd run/
+  153  more se
+  154  more ../../setup.sh 
+  155  LS
+  156  more ../../../scripts/
+  157  more ../../setup.sh 
+  158  LS
+  159  vi ../../setup.sh 
+  160  是X 地宫2yb951bhedigs
+  161  freedigs
+  162  ssh -X dig32
+  163  d12
+  164  rsub ../../setup.sh 
+  165  LS
+  166  ls
+  167  more /work/zibochen/scripts/flags_remodel_inputsc
+  168  more ~zibochen/orthogonal/domain_swap/whole_complex/run.sh 
+  169  vi /work/zibochen/scripts/flags_remodel_inputsc
+  170  top
+  171  ssh -X dig32
+  172  top
+  173  freedigs
+  174  ssh -X dig27
+  175  top
+  176  wd
+  177  pwd
+  178  cd domain_swap_heterodimer/18A19B/run/
+  179  nano test_echo.sh
+  180  sh test_echo.sh 
+  181  q
+  182  freedigs
+  183  ssh -X dig17
+  184  top
+  185  cd fold_boinc_domain_swap/test_rename
+  186  ls
+  187  sh test_rename.sh 
+  188  ls
+  189  echo */
+  190  sh test_rename.sh
+  191  cd domain_swap_heterodimer/18A19B/run/
+  192  ls
+  193  sh rename_renum_0001_out.sh 
+  194  ls
+  195  cd 2
+  196  ls
+  197  b
+  198  ls
+  199  LS
+  200  ls
+  201  source ~zibochen/.bashrc
+  202  LS
+  203  b
+  204  LS
+  205  l
+  206  ll
+  207  LS
+  208  ls
+  209  b
+  210  cd 18A19B/
+  211  ls
+  212  pwd
+  213  ls finished/
+  214  ls finished/models/
+  215  ls
+  216  cd run/
+  217  ls
+  218  sh rename_renum_0001_out.sh 
+  219  ls
+  220  cd 1
+  221  ls
+  222  b
+  223  ls
+  224  sh rename_renum_0001_out.sh 
+  225  ls
+  226  cd 1
+  227  ls
+  228  b
+  229  ls
+  230  b
+  231  ls
+  232  b
+  233  ls
+  234  cd 18A19B/
+  235  ls
+  236  cd finished/models/
+  237  ls
+  238  grep {/ ~zibochen/history/*
+  239  grep -r {/ ~zibochen/history/*
+  240  grep -r /} ~zibochen/history/*
+  241  ls
+  242  rm *
+  243  b
+  244  ls
+  245  b
+  246  ls
+  247  cd run/
+  248  sh rename_renum_0001_out.sh 
+  249  b
+  250  ls
+  251  b
+  252  ls
+  253  cd 18A19B/
+  254  ls
+  255  cd run/m
+  256  ls
+  257  cd finished/models/
+  258  ls
+  259  b
+  260  ls
+  261  b
+  262  ls
+  263  b
+  264  ls
+  265  LS
+  266  cp /work/zibochen/scripts/flags_remodel_inputsc ~/scripts/
+  267  LS ~/scripts/flags_remodel_inputsc 
+  268  cat ~zibochen/orthogonal/domain_swap/whole_complex/run.sh 
+  269  ls ~possu/s
+  270  ls ~possu/src/git/
+  271  b
+  272  l
+  273  cd domain_swap_heterodimer/
+  274  ls
+  275  LS
+  276  cd 18A19B/
+  277  ls
+  278  LS
+  279  cd finished/
+  280  ls
+  281  cd models/
+  282  ls
+  283  python ~grocklin/gabe_scripts/psipred_all.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb 
+  284  python ~grocklin/gabe_scripts/psipred_me.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb 
+  285  LS
+  286  more 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb_dssp.horiz
+  287  more 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb.dssp
+  288   
+  289  LS
+  290  more 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb_dssp.horiz
+  291  /work/oberdogu/scripts/dump_abego_sequence.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb 
+  292  python /work/oberdogu/scripts/dump_abego_sequence.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb 
+  293  source ~fordas/virtualenvs/close_structure_prototype/bin/activate 
+  294  python /work/oberdogu/scripts/dump_abego_sequence.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb 
+  295  python /work/oberdogu/scripts/sequence_based_backbone_compatibility.py  18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb 
+  296  LS
+  297  python /work/oberdogu/scripts/dump_abego_sequence.py *pdb > abego.out &
+  298  more abego.out 
+  299  ls /work/sboyken/HH_ABEGO_profiles
+  300  more abego.out 
+  301  LS
+  302  ~/gabe_scripts/abego_seq_agreement.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb.fasta
+  303  python ~/gabe_scripts/abego_seq_agreement.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb.fasta
+  304  python ~grocklin/gabe_scripts/abego_seq_agreement.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb.fasta
+  305  python ~grocklin/gabe_scripts/abego_seq_agreement.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb
+  306  /work/oberdogu/scripts/dump_abego_sequence.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb
+  307  python /work/oberdogu/scripts/dump_abego_sequence.py 18A19B_renum_0001-ext_ends_-1_loop_len_6_B.pdb
+  308  more abego.out 
+  309  history
+  310  freedigs
+  311  ssh -X dig26
+  312  top
+  313  cd domain_swap_heterodimer/18A19B/
+  314  sh ../fin_unfin.sh 
+  315  cd run
+  316  sh ../../fin_unfin.sh 
+  317  freedigs
+  318  ssh -X dig21
+  319  cd domain_swap_heterodimer/
+  320  ls
+  321  sh fin_unfin.sh 
+  322  '
+  323  freedigs
+  324  ssh -X dig 32
+  325  freedigs
+  326  ssh -X dig21
+  327  ssh -X dig31
+  328  top
+  329  pwd
+  330  cd domain_swap_heterodimer/
+  331  cd 18B19A/
+  332  cd run/
+  333  sh ../../setup.sh &
+  334  top
+  335  cp ~zibochen/bin/killme.pl .
+  336  cp killme.pl ~/scripts/
+  337  perl ~/scripts/killme.pl 
+  338  t
+  339  top
+  340  perl ~/scripts/killme.pl 
+  341  top
+  342  pwd
+  343  top
+  344  vi ~/scripts/killme.pl 
+  345  nano ~/scripts/killme.pl 
+  346  perl ~/scripts/killme.pl 
+  347  to
+  348  top
+  349  freedigs
+  350  ssh -X dig20
+  351  top
+  352  cd domain_swap_heterodimer/
+  353  sh fin_unfin.sh 
+  354  source ~fordas/virtualenvs/close_structure_prototype/bin/activate
+  355  sh fin_unfin.sh 
+  356  freedigs
+  357  top
+  358  sh fin_unfin.sh 
+  359  cd 18B19A/
+  360  cd finished_models/
+  361  cd 18B19A/finished_models; python /work/oberdogu/scripts/dump_abego_sequence.py *pdb > abego.out &; cd../
+  362   python /work/oberdogu/scripts/dump_abego_sequence.py *pdb > abego.out &
+  363  sh fin_unfin.sh 
+  364  cd ..
+  365  sh fin_unfin.sh 
+  366  freedigs
+  367  ssh -X dig25
+  368  ssh -X dig31
+  369  cd domain_swap_heterodimer/18B19A/run/
+  370  sh ../../setup.sh &
+  371  freedigs
+  372  d26
+  373  ssh -X dig26
+  374  top
+  375  cd domain_swap_heterodimer/18A19B/
+  376  cd run_round_2/
+  377  sh setup.sh 
+  378  cd ..
+  379  sh fin_unfin.sh 
+  380  cd 18A19B/run_round_2/
+  381  sh setup.sh 
+  382  ssh -X dig32
+  383  top
+  384  cd domain_swap_heterodimer/
+  385  cd 18B19A/run
+  386  cd ../run_round_2/
+  387  sh ../../setup.sh 
+  388  pwd
+  389  top
+  390  freedigs
+  391  sh ../../setup.sh 
+  392  ssh -X dig32
+  393  cd domain_swap_heterodimer/
+  394  cd 18B19A
+  395  ls
+  396  cd run_round_2/
+  397  sh ../../setup.sh 
+  398  cd ..
+  399  ls
+  400  cd 18B19A/
+  401  cd run_round_2/
+  402  ls
+  403  sh setup.sh 
+  404  ls
+  405  cd ..
+  406  cd 18B19A/
+  407  ls
+  408  cd run_round_2/
+  409  sh setup.sh 
+  410  freedigs
+  411  ssh -X dig18
+  412  freedigs
+  413  ssh -X dig20
+  414  cd fold_boinc_domain_swap/18A19B_fold_round_1/
+  415  sh ../boincinize.sh 
+  416  ssh -X dig20
+  417  cd domain_swap_heterodimer/
+  418  ls
+  419  sh fin_unfin_2.sh 
+  420  source ~fordas/virtualenvs/close_structure_prototype/bin/activate
+  421  cd 18A19B/finished_models_2/
+  422  ls
+  423  cd ../../
+  424  cd 18B19A/finished_models_2/
+  425  ls
+  426  python /work/oberdogu/scripts/dump_abego_sequence.py *pdb > abego.out &
+  427  ls
+  428  cat abego.out 
+  429  python /work/oberdogu/scripts/dump_abego_sequence.py *pdb > abego.out &
+  430  cat abego.out 
+  431  pwd
+  432  ls
+  433  rm abego.out 
+  434  ls
+  435  python /work/oberdogu/scripts/dump_abego_sequence.py *pdb > abego.out &
+  436  cd ~scripts
+  437  cd ~scripts/
+  438  cd ~/scripts/
+  439  pwd
+  440  cp -Rf /work/oberdogu/scripts/dump_abego_sequence.py ~/scripts/
+  441  ls
+  442  cp dump_abego_sequence.py dump_abego_sequence_updated.py
+  443  freedigs
+  444  ssh 0X dig20
+  445  ssh -x dig20
+  446  top
+  447  ssh -X dig30
+  448  top
+  449  cd fold_boinc_domain_swap/18B19A_fold_round_1/
+  450  sh boincinize.sh 
+  451  top
+  452  sh boincinize.sh 
+  453  top
+  454  ssh -X dig30
+  455  top
+  456  freedigs
+  457  ssh -X dig20
+  458  pwd
+  459  ls
+  460  cd domain_swap_heterodimer/
+  461  ls
+  462  cd 18A19B/
+  463  cd finished_models
+  464  ls
+  465  cat abego.out 
+  466  cd fold_boinc_domain_swap/18B19A_fold_round_1/
+  467  top
+  468  ls
+  469  sh boincinize.sh 
+  470  top
+  471  cd ../18B19A_fold_round_2
+  472  sh boincinize.sh 
+  473  top
+  474  cd fold_boinc_domain_swap/18A19B_fold_round_1/
+  475  ls
+  476  sh boincinize.sh 
+  477  top[; top; }; ]
+  478  top
+  479  cd ../18A19B_fold_round_2
+  480  sh boincinize.sh 
+  481  top
+  482  pwd
+  483  ls 
+  484  cd ABEGO/
+  485  ls
+  486  cat adapter_Baihan_BGI.pl 
+  487  ls
+  488  less Short_stat_Baihan_BGI.pl 
+  489  cat ABEGO_out_4_5 
+  490  cat test_abego.out 
+  491  freedigs
+  492  ssh -X dig33
+  493  top
+  494  freedigs
+  495  ssh -X dig16
+  496  pwd
+  497  ls
+  498  cd domain_swap_heterodimer/
+  499  ls
+  500  cd whole_complex/
+  501  ls
+  502  top
+  503  cd whole_complex/
+  504  cd domain_swap_heterodimer/
+  505  cd whole_complex/
+  506  ls
+  507  cd test2
+  508  ls
+  509  sh run_test2.sh 
+  510  top
+  511  top
+  512  pwd
+  513  cd domain_swap_heterodimer/
+  514  ls
+  515  cd whole_complex/
+  516  ls
+  517  cd test
+  518  ls
+  519  sh test_run.sh 
+  520  top
+  521  cd ..
+  522  cd test3
+  523  ls
+  524  cd bp_169_test/
+  525  ls
+  526  sh run_test3.sh 
+  527  top
+  528  ssh -X dig22
+  529  echp 'asdfjasldkfjaklsjflkas'
+  530  echo 'asdfadsf'
+  531  echo '----------'
+  532  top
+  533  cd domain_swap_heterodimer/whole_complex/test0/
+  534  sh run_test8.sh 
+  535  cd domain_swap_heterodimer/whole_complex/test0/
+  536  ls
+  537  ll
+  538  top
+  539  ssh -X dig26
+  540  cd domain_swap_heterodimer/whole_complex/
+  541  cd test0
+  542  sh run_test8.sh 
+  543  top
+  544  cd domain_swap_heterodimer/whole_complex/
+  545  cd test10
+  546  sh run_test8.sh 
+  547  top
+  548  cd domain_swap_heterodimer/whole_complex/
+  549  cd test9
+  550  sh run_test8.sh 
+  551  top
+  552  cd domain_swap_heterodimer/whole_complex/
+  553  cd test11
+  554  sh run_test8.sh 
+  555  top
+  556  cd domain_swap_heterodimer/whole_complex/
+  557  cd test8
+  558  sh run_test8.sh 
+  559  top
+  560  top
+  561  freedigs
+  562  top
+  563  ssh -X dig30
+  564  pwd
+  565  ls
+  566  ll
+  567  cd domain_swap_heterodimer/whole_complex/
+  568  ls
+  569  cat run.sh 
+  570  top
+  571  cd domain_swap_heterodimer/whole_complex/
+  572  ls
+  573  ll
+  574  cd WC-test0
+  575  ls
+  576  sh setup.sh 
+  577  top
+  578  ls
+  579  sh ../../setup.sh 
+  580  top
+  581  cd domain_swap_heterodimer/whole_complex/
+  582  ll
+  583  cd ls
+  584  ls
+  585  sh collect_models.sh 
+  586  ls
+  587  sh collect_models.sh 
+  588  cd finished_models_test1_256/
+  589  sh ../collect_models.sh 
+  590  cd ..
+  591  history |grep boinc
+  592  boinc_rm -user sunnylin
+  593  more ~zibochen/.bashrc
+  594  source ~zibochen/.bashrc
+  595  boinc_rm -user sunnylin
+  596  sh ../collect_models.sh 
+  597  cd finished_models_test1_256/
+  598  sh ../collect_models.sh 
+  599  cd ..
+  600  ls
+  601  sh collect_models.sh 
+  602  freedigs
+  603  ssh dig17
+  604  top
+  605  freedigs
+  606  ssh -X dig32
+  607  top
+  608  cd domain_swap_heterodimer/whole_complex/
+  609  ls
+  610  cd WC-test2-2916/
+  611  sh ../setup.sh 
+  612  to]p
+  613  top
+  614  cd domain_swap_heterodimer/whole_complex/
+  615  ls
+  616  ll
+  617  cd WC-test1-576/
+  618  ll
+  619  ls
+  620  cd ../
+  621  ls
+  622  ssh -X dig22
+  623  top
+  624  ssh -X dig12
+  625  cd domain_swap_heterodimer/wc2dm/
+  626  ls
+  627  cd finished_models_test1_256/
+  628  sh ../test_strnum.sh 
+  629  ls | egrep -o [0-9]+
+  630  sh ../test_strnum.sh 
+  631  ls | egrep -o [0-9]+ > fParameter.out
+  632  cd ../finished_models_test2_270/
+  633  ls | egrep -o [0-9]+ > fParameter.out
+  634  top
+  635  cd domain_swap_heterodimer/wc2dm/
+  636  cd test0/
+  637  sh ../setup.sh 
+  638  top
+  639  freedigs
+  640  ssh -X dig11
+  641  cd domain_swap_heterodimer/wc2dm/test0
+  642  sh ../setup.sh 
+  643  top
+  644  sh ../setup.sh 
+  645  top
+  646  cd ..
+  647  cd whole_complex/
+  648  ls
+  649  cd WC-test2-271-451/
+  650  top
+  651  ls ..
+  652  cd ..
+  653  sh collect_models.sh 
+  654  ls
+  655  cd finished_models_test1_576/
+  656  ls
+  657  cd ../finished_models_test2_451/
+  658  ls
+  659  top
+  660  cd domain_swap_heterodimer/wc2dm/test0/
+  661  ls
+  662  sh ../setup.sh 
+  663  top
+  664  freedigs
+  665  ssh -X dig19
+  666  boinc_rm -user sunnylin
+  667  top
+  668  freedigs
+  669  ssh -X dig16
+  670  freedigs
+  671  ssh -X dig11
+  672  ssh -X dig28
+  673  top
+  674  q
+  675  top
+  676  pwd
+  677  cd domain_swap_heterodimer/
+  678  ls
+  679  ll
+  680  cd  wc2dm/
+  681  ll
+  682  cd 18
+  683  cd 18A19B_run/
+  684  ls
+  685  freedigs
+  686  ssh -X dig12
+  687  cd domain_swap_heterodimer/wc2dm/18B19A-wc2dm-test1
+  688  sh ../setup.sh 
+  689  ll
+  690  top
+  691  ls
+  692  cd domain_swap_heterodimer/
+  693  ls
+  694  freedigs
+  695  ssh -X dig10
+  696  cd domain_swap_heterodimer/wc2dm/18B19A-wc2dm-test2/
+  697  sh ../setup.sh 
+  698  freedigs
+  699  ssh -X dig28
+  700  top
+  701  cd domain_swap_heterodimer/whole_complex/WC-test2-2916/
+  702  sh ../setup.sh 
+  703  top
+  704  freedigs
+  705  ssh -X dig22
+  706  top[
+  707  top
+  708  cd domain_swap_heterodimer/whole_complex/WC-test1-576/
+  709  sh ../setup.sh 
+  710  freedigs
+  711  ssh -X dig11
+  712  cd domain_swap_heterodimer/wc2dm/
+  713  ls
+  714  cd 18A19B-wc2dm-test1/
+  715  sh ../setup.sh 
+  716  freedigs
+  717  ssh -X dig13
+  718  cd domain_swap_heterodimer/wc2dm/18A19B-wc2dm-test2
+  719  sh ../setup.sh 
+  720  top
+  721  ;s
+  722  ls
+  723  cd domain_swap_heterodimer/
+  724  ls
+  725  ll
+  726  cd whole_complex/
+  727  ll
+  728  cd finished_models_test
+  729  cd finished_models_test2_270/
+  730  lll
+  731  ll
+  732  pwd
+  733  top
+  734  freedigs
+  735  pwd
+  736  ll
+  737  ls
+  738  ll
+  739  top
+  740  ll
+  741  echo 
+  742  echo /
+  743  tree pwd
+  744  tree 
+  745  ll
+  746  cd scripts/
+  747  ll
+  748  cat tree.sh 
+  749  cd ..
+  750  ls
+  751  /ll
+  752  ll
+  753  sh tree.sh 
+  754  sh tree.sh > treelist.out
+  755  top
+  756  ll
+  757  ls
+  758  cd ABEGO/
+  759  ls
+  760  cd ../C3_Helix/
+  761  ls
+  762  cd ../CD_Baihan/
+  763  ls
+  764  cd ../design_
+  765  cd ../design_1/
+  766  ls
+  767  cd ../design_round_2
+  768  ls
+  769  cd ../design_round_2_new_run_energy/
+  770  ls
+  771  cd ../domain_swap_heterodimer/
+  772  ls
+  773  cd ../domain_swap_homodimer/
+  774  ls
+  775  cd ../fold_boinc
+  776  ls
+  777  cd ../fold_boinc_C3_Helix_attempt_4/
+  778  ls
+  779  cd ../fold_boinc_5L_6H_C3_1_scemal_5_2/
+  780  ls
+  781  cd ../fold_boinc_domain_swap/
+  782  ls
+  783  cd ../fold_boinc_round_2/
+  784  ls
+  785  cd ../for_Baihan_7-18-2015/
+  786  ls
+  787  cd ../for_closed/
+  788  ls
+  789  cd ../loop_closure
+  790  ls
+  791  cd ../loop_closure_2nd_Round/
+  792  ls
+  793  cd ../loop_closure_3rd_round_kic/
+  794  ls
+  795  cd ../loop_closure_Testing/
+  796  ls
+  797  cd ../new_run_energy_high/
+  798  ls
+  799  cd ../order_gene/
+  800  ls
+  801  cd ../remodel/
+  802  ls
+  803  cd ../scripts/
+  804  ls
+  805  cd ../design_round_3/
+  806  ls
+  807  cd ../design_round_4/
+  808  ls
+  809  cd ../design_round_5
+  810  ls
+  811  top
+  812  ls
+  813  cd design_round_6_allmapping/
+  814  ls
+  815  l
+  816  ls
+  817  cd ../design_round_7_surrounding/
+  818  ls
+  819  cd ../design_round_xi_noresfile_denovofast_specifiedmover/
+  820  ls
+  821  top
+  822  cd design_round_7_trimheadend/
+  823  ls
+  824  cd ../design_round_8_allmapping/
+  825  ls
+  826  cd ../design_round_8_surrounding/
+  827  ls
+  828  cd ../design_round_8_trimheadend/
+  829  ls
+  830  cd ../design_round_9_noLayerDesign_allmapping/
+  831  ls
+  832  cd ../design_round_9_noLayerDesign_surrounding/
+  833  ls
+  834  cd ../design_round_9_noLayerDesign_trimheadend/
+  835  ls
+  836  cd ../design_round_x_allmapping/
+  837  ls
+  838  cd ../design_round_xi_allmapping_denovofast_specifiedmover/
+  839  ls
+  840  cd ../design_round_xii_no_layer/
+  841  ls
+  842  pwd
+  843  ls
+  844  cd domain_swap_heterodimer/
+  845  ls
+  846  pwd
+  847  ls
+  848  cd scripts/
+  849  ls
+  850  ll
+  851  ls
+  852  cd domain_swap_heterodimer/
+  853  ls
+  854  freedigs
+  855  ssh -X dig26
+  856  top
+  857  pwd
+  858  ls
+  859  top
+  860  ssh -X sunnylin@hyak.washington.edu
+  861  -R 52698:localhost:52698
+  862  sudo wget -O /usr/local/bin/rsub https://raw.github.com/aurora/rmate/master/rmate
+  863  top
+  864  freedigs
+  865  ssh -X dig15
+  866  pwd
+  867  nano .bashrc 
+  868  mkdir ~/bin
+  869  ls
+  870  -R 52698:localhost:52698
+  871  sudo wget -O /usr/local/bin/rsub https://raw.github.com/aurora/rmate/master/rmate
+  872  sudo wget -O ~/bin/rsub https://raw.github.com/aurora/rmate/master/rmate
+  873  nano .bashrc
+  874  top
+  875  cat .bashrc 
+  876  pwd
+  877  ls
+  878  cd C3_Helix/
+  879  ls
+  880  cd ..
+  881  cd
+  882  ssh -X sunnylin@hyak.washington.edu
+  883  cat /work/robetta/workspace/labFragPicker_DO_NOT_REMOVE/bakerlab_scripts/boinc/make_fragments.py 
+  884  cat /work/robetta/workspace/labFragPicker_DO_NOT_REMOVE/bakerlab_scripts/boinc/submit_to_boinc.py
+  885  cd ~zibochen/
+  886  LS
+  887  cd Rosetta_devel/
+  888  LS
+  889  cd main/source/bin/
+  890  scp flatland.static.linuxgccrelease sunnylin@hyak.washington.edu:/gscratch/stf/sunnylin/
+  891  b
+  892  ls
+  893  scp -r database/ sunnylin@hyak.washington.edu:/gscratch/stf/sunnylin/
+  894  ssh -X sunnylin@hyak.washington.edu
+  895  LS
+  896  ssh -X sunnylin@hyak.washington.edu
+  897  history 
+  898  LS
+  899  cd ~zibochen/Rosetta_devel/main/source/bin/
+  900  S
+  901  LS
+  902  scp flatland.static.linuxgccrelease sunnylin@hyak.washington.edu:/gscratch/stf/sunnylin
+  903  cd
+  904  LS
+  905  cd pdb_extract/
+  906  LS
+  907  cd pdb_extraction/
+  908  ls
+  909  b
+  910  LS
+  911  b
+  912  LS
+  913  scp -r pdb_extract/ sunnylin@hyak.washington.edu:/gscratch/stf/sunnylin
+  914  top
+  915  top
+  916  pwd
+  917  ls
+  918  mkdir self_assembly_design
+  919  ls
+  920  cd self_assembly_design/
+  921  pwd
+  922  psu --stats
+  923  pwc
+  924  pwd
+  925  ls
+  926  cd self_assembly_design/
+  927  freedigs
+  928  ssh -X dig20
+  929  freedigs
+  930  ssh -X dig20
+  931  ls
+  932  cd self_assembly_design/
+  933  ls
+  934  cd pdb37_20160720/
+  935  pwd
+  936  LS
+  937  cd self_assembly_design/
+  938  LS
+  939  cd pdb41
+  940  cd pdb41_20160722/
+  941  pwd
+  942  freedigs
+  943  ssh -X dig28
+  944  cd self_assembly_design/asym_docking_pdbs_20160722/
+  945  LS
+  946  ls | wc
+  947  ls
+  948  ls |wc
+  949  j=1;for i in *pdb;do mv $i $j.pdb;echo $i $j.pdb;let j=j+1;done >corres.txt
+  950  LS
+  951  more corres.txt 
+  952  LS
+  953  sh ~zibochen/scripts/boinc/setup_asym_dock.sh &
+  954  t
+  955  LS
+  956  t
+  957  LS
+  958  more cmd_list 
+  959  LS
+  960  more ~zibochen/scripts/boinc/setup_asym_dock.sh 
+  961  sh /work/zibochen/bin/nhp.sh 20 cmd_list &
+  962  t
+  963  LS
+  964  more ~zibochen/scripts/boinc/setup_asym_dock.sh 
+  965  LS
+  966  t
+  967  history 
+  968  t
+  969  LS
+  970  more ~zibochen/scripts/boinc/submit_asym_dock.sh 
+  971  more ~zibochen/scripts/boinc/setup_asym_dock.sh 
+  972  LS
+  973  t
+  974  LS
+  975  #sh ~zibochen/scripts/boinc/submit_asym_dock.sh 
+  976  more ~zibochen/scripts/boinc/submit_asym_dock.sh
+  977  LS
+  978  t
+  979  LS
+  980  t
+  981  LS
+  982  t
+  983  LS
+  984  t
+  985  LS
+  986  more ~zibochen/scripts/boinc/setup_asym_dock.sh 
+  987  sh ~zibochen/scripts/boinc/submit_asym_dock.sh &
+  988  LS
+  989  t
+  990  top
+  991  cd ..
+  992  history > dig-history-20160722
+  993  history
+  994  cd self_assembly_design/asym_docking_pdbs_20160722/
+  995  L
+  996  S
+  997  ls
+  998  cd 32
+  999  cd 32-asymdock/
+ 1000  LS
+ 1001  head 32_all_plot.sc
+ 1002  b
+ 1003  cd
+ 1004  LS /net/BOINC
+ 1005  LS /net/BOINC/results/sunnylin/sunnylin_cd
+ 1006  cd ~zibochen/flatland/
+ 1007  SL
+ 1008  LS
+ 1009  cd pre-ORDER5
+ 1010  LS
+ 1011  cd 4_remove_met_trp/
+ 1012  LS
+ 1013  vi heterodimer_final_design.flags
+ 1014  vi design.res
+ 1015  vi heterodimer_final_design.xml
+ 1016  LS 1
+ 1017  LS
+ 1018  vi heterodimer_final_design.flags
+ 1019  vi heterodimer_final_design.xml
+ 1020  vi heterodimer_final_design.flags
+ 1021  LS
+ 1022  b
+ 1023  LS
+ 1024  cd 5_to_single_chains
+ 1025  LS
+ 1026  ls
+ 1027  LS 1
+ 1028  vi ~zibochen/scripts/flatland/flatland_add_loop_from_pdb_trimer.py
+ 1029  pwd
+ 1030  #cd /work/zibochen/flatland/pre-ORDER5/5_to_single_chains
+ 1031  b
+ 1032  cd /work/sunnylin/
+ 1033  history > dig-history-20160726
+ 1034  history
+ 1035  LS
+ 1036* cp /work/zibochen/Rosetta/main/source/bin/extract_pdbs.default.linuxgccrelease -in:file:silent input.silent .
+ 1037  pwd
+ 1038  echo /work/zibochen/Rosetta/main/source/bin/extract_pdbs.default.linuxgccrelease -in:file:silent *.silent > silent2pdb.sh
+ 1039  LS
+ 1040  cat silent2pdb.sh
+ 1041  cd
+ 1042  cd ~zibochen/flatland/
+ 1043  LS
+ 1044  cd 
+ 1045  cd ~zibochen/flatland/
+ 1046  LS
+ 1047  cd pre-ORDER5/
+ 1048  LS
+ 1049  cd 5_to_single_chains/
+ 1050  LS
+ 1051  cd 1
+ 1052  LS
+ 1053  b
+ 1054  L
+ 1055  LS
+ 1056  more list 
+ 1057  LS
+ 1058  LS 11/
+ 1059  LS
+ 1060  b
+ 1061  LS
+ 1062  b
+ 1063  LS
+ 1064  cd benchmark
+ 1065  LS
+ 1066  LS bobby_closed/
+ 1067  LS
+ 1068  b
+ 1069  LS
+ 1070  cp -r benchmark ~/self_assembly_design/
+ 1071  more ~zibochen/scripts/flatland/flatland_add_loop_from_pdb_trimer.py
+ 1072  #sh ~zibochen/scripts/boinc/get_A_and_B_separate.sh 
+ 1073  vi ~zibochen/scripts/flatland/flatland_add_loop_from_pdb_trimer.py
+ 1074  pwd
+ 1075  cd pre-ORDER5/
+ 1076  LS
+ 1077  cd 5_to_single_chains/
+ 1078  LS
+ 1079  ls
+ 1080  more list 
+ 1081  cd 13/
+ 1082  ls
+ 1083  LS
+ 1084  ll
+ 1085  pwd
+ 1086  cd
+ 1087  pwd
+ 1088  LS
+ 1089  history > dig-history-20160727
