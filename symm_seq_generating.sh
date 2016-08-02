@@ -5,7 +5,7 @@
 
 
 now=$(date +"%Y%m%d")
-cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/$now.donelist | uniq -d > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/$now.uniqdonelist;
+cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/$now.donelist | uniq > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/$now.uniqdonelist;
 
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/5/" $now.uniqdonelist > $now.uniqdonelist_C2;
 grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/6/" $now.uniqdonelist >> $now.uniqdonelist_C2;
