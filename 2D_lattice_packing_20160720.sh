@@ -26,6 +26,7 @@ cp dir20160720.list res_6.sh
 
 sed -i -e 's/^/cd /' res_6.sh;
 sed -i 's#$# ;for i in HBNet*res; do echo "">>$i;cat /gscratch/stf/zibochen/temp/c2_1.res>>$i;grep -v '^$' $i >temp;mv temp $i;sed -i \'s/B/A/g\' $i;done #' res_6.sh;
+sh res_6.sh
 
 cp dir20160720.list packing1_2.run;
 #rsub packing1.run;

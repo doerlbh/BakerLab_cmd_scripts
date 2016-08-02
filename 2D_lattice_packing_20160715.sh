@@ -55,6 +55,8 @@ sed -i 's#$# ;for i in HBNet*res; do echo "">>$i;cat /gscratch/stf/zibochen/temp
 
 cat res_C3_1_12_2.sh res_C3_2_13_2.sh res_C3_3_6_2.sh res_C3_4_1_2.sh res_C2_1_31_2.sh res_C2_2_16_2.sh > make_res_2.sh
 
+sh make_res_2.sh;
+
 cp sildir20160715only.sortedlist packing1_2.run;
 #rsub packing1.run;
 
