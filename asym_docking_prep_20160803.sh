@@ -3,19 +3,15 @@
 #Date: July 2016
 #Lab: Baker Lab
 
-
-
-find `pwd` -name "*pdb_1_0001.pdb" > clrjunk.sh;
-find `pwd` -name "*extracted*.pdb" >> clrjunk.sh;
-find `pwd` -name "analysis_score.sc" >> clrjunk.sh;
-sed -i -e 's/^/rm /' clrjunk.sh;
-sh clrjunk.sh;
-
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
 
 now=$(date +"%Y%m%d")
 
-#rm *pdb_1_0001.pdb;rm *extracted*.pdb;rm analysis_score.sc
+cp sildir20160801only.sortedlist $now.dirlist
+for i in `cat res20160711.sortedlist`;do dirname $i;done >> $now.dirlist
+for i in `cat res20160715.sortedlist`;do dirname $i;done >> $now.dirlist
+
+rm *pdb_1_0001.pdb;rm *extracted*.pdb;rm analysis_score.sc
 
 
 find `pwd` -name "packed*.pdb" > packed$now.list;
