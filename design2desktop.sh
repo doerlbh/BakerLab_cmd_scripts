@@ -38,3 +38,12 @@ mkdir C3_88_20160722;
 sed -i -e 's/^/cp /' C3Out.sh;
 sed -i 's#$#* /gscratch/stf/sunnylin/160624_flatland_finer_sampling/C3_88_20160722#' C3Out.sh;
 sh C3Out.sh;
+
+
+
+rsub outpdb35.sh
+sed -i -e 's/^/cp /' outpdb35.sh
+sed -i 's#$#* /gscratch/stf/sunnylin/160624_flatland_finer_sampling/pdb35_20160803#' outpdb35.sh
+sh outpdb35.sh
+
+#scp sunnylin@hyak.washington.edu:/gscratch/stf/sunnylin/160624_flatland_finer_sampling/pdb35_20160803/ .
