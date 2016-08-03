@@ -11,21 +11,14 @@ cp sildir20160801only.sortedlist $now.dirlist
 for i in `cat res20160711.sortedlist`;do dirname $i;done >> $now.dirlist
 for i in `cat res20160715.sortedlist`;do dirname $i;done >> $now.dirlist
 
-rm *pdb_1_0001.pdb;rm *extracted*.pdb;rm analysis_score.sc
+for j in `cat $now.dirlist`; do
+	cd $j;
+	find `pwd` -name "packed*.pdb" >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/packed$now.list;
+	cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
+done
 
-
-find `pwd` -name "packed*.pdb" > packed$now.list;
 for i in `cat packed$now.list`;do dirname $i;done > packeddir$now.list;
 cat packeddir$now.list | uniq -d > packdiruniq$now.list;
-
-#wc -l res20160711.list 
-#wc -l sil20160711.list 
-#res20160711.list backup_res.sh
-#mkdir backupres20160711
-#sed -i -e "s/^/cp /" backup_res.sh 
-#sed -i 's#$# ./backupres20160711; #' backup_res.sh 
-
-#cat /gscratch/stf/sunnylin/160624_flatland_finer_sampling/packed20160712.list | uniq -d > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/packed20160712.list
 
 cp packdiruniq$now.list analyreplace$now.run;
 
@@ -40,12 +33,12 @@ grep "/gscratch/stf/sunnylin/160624_flatland_finer_sampling/1/" packdiruniq$now.
 
 
 sed -i -e 's/^/cd /' extd*.sh;
-sed -i 's#$#; rm "*extract*.pdb"; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C2.sh $i packed_${i/.pdb/}*designed_full_lattice* 76;done#' extd_6_ZC31_76.sh;
-sed -i 's#$#; rm "*extract*.pdb"; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C2.sh $i packed_${i/.pdb/}*designed_full_lattice* 75;done#' extd_5_ZC16_75.sh;
-sed -i 's#$#; rm "*extract*.pdb"; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C3.sh $i packed_${i/.pdb/}*designed_full_lattice* 85;done#' extd_4_5L6HC3_1_85.sh;
-sed -i 's#$#; rm "*extract*.pdb"; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C3.sh $i packed_${i/.pdb/}*designed_full_lattice* 74;done#' extd_3_2L6HC3_6_74.sh;
-sed -i 's#$#; rm "*extract*.pdb"; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C3.sh $i packed_${i/.pdb/}*designed_full_lattice* 74;done#' extd_2_2L6HC3_13_74.sh;
-sed -i 's#$#; rm "*extract*.pdb"; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C3.sh $i packed_${i/.pdb/}*designed_full_lattice* 74;done#' extd_1_2L6HC3_12_74.sh;
+sed -i 's#$#; rm *pdb_1_0001.pdb;rm *extracted*.pdb;rm analysis_score.sc; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C2.sh $i packed_${i/.pdb/}*designed_full_lattice* 76;done#' extd_6_ZC31_76.sh;
+sed -i 's#$#; rm *pdb_1_0001.pdb;rm *extracted*.pdb;rm analysis_score.sc; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C2.sh $i packed_${i/.pdb/}*designed_full_lattice* 75;done#' extd_5_ZC16_75.sh;
+sed -i 's#$#; rm *pdb_1_0001.pdb;rm *extracted*.pdb;rm analysis_score.sc; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C3.sh $i packed_${i/.pdb/}*designed_full_lattice* 85;done#' extd_4_5L6HC3_1_85.sh;
+sed -i 's#$#; rm *pdb_1_0001.pdb;rm *extracted*.pdb;rm analysis_score.sc; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C3.sh $i packed_${i/.pdb/}*designed_full_lattice* 74;done#' extd_3_2L6HC3_6_74.sh;
+sed -i 's#$#; rm *pdb_1_0001.pdb;rm *extracted*.pdb;rm analysis_score.sc; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C3.sh $i packed_${i/.pdb/}*designed_full_lattice* 74;done#' extd_2_2L6HC3_13_74.sh;
+sed -i 's#$#; rm *pdb_1_0001.pdb;rm *extracted*.pdb;rm analysis_score.sc; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C3.sh $i packed_${i/.pdb/}*designed_full_lattice* 74;done#' extd_1_2L6HC3_12_74.sh;
 
 cat extd_6_ZC31_76.sh extd_5_ZC16_75.sh extd_4_5L6HC3_1_85.sh extd_3_2L6HC3_6_74.sh extd_2_2L6HC3_13_74.sh extd_1_2L6HC3_12_74.sh > extractdone$now.run;
 
