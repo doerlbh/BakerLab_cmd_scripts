@@ -8,7 +8,7 @@ cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
 now=$(date +"%Y%m%d")
 
 cp sildir20160801only.sortedlist $now.dirlist
-for i in `cat res20160711.sortedlist`;do dirname $i;done >> $now.dirlist
+cat /6/dir20160720.list >> $now.dirlist
 for i in `cat res20160715.sortedlist`;do dirname $i;done >> $now.dirlist
 
 for j in `cat $now.dirlist`; do
@@ -19,6 +19,30 @@ done
 
 for i in `cat packed$now.list`;do dirname $i;done > packeddir$now.list;
 cat packeddir$now.list | uniq -d > packdiruniq$now.list;
+
+
+
+
+for j in `cat dir20160720.list`; do
+	cd $j;
+	find `pwd` -name "packed*.pdb" >> /gscratch/stf/sunnylin/160624_flatland_finer_sampling/packed0720.list;
+	cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/6/;
+done
+cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
+for i in `cat packed0720.list`;do dirname $i;done > packeddir0720.list;
+cat packeddir0720.list | uniq -d > packdiruniq0720.list;
+cp packdiruniq0720.list extra0720.sh
+sed -i -e 's/^/cd /' extra0720.sh;
+sed -i 's#$#; rm *pdb_1_0001.pdb;rm *extracted*.pdb;rm analysis_score.sc; for i in HBNet*pdb;do sh /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/get_adj_C2.sh $i packed_${i/.pdb/}*designed_full_lattice* 76;done#' extra0720.sh;
+cat extra0720.sh | psu --load --sql-set 2Dpacking;
+cp packdiruniq0720.list extraana0720.sh
+sed -i -e 's/^/cd /' extraana0720.sh;
+sed -i 's#$#;/gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/source/bin/rosetta_scripts.hdf5.linuxgccrelease -database /gscratch/baker/sboyken/AzoF_Rosetta/Rosetta/main/database/ -beta -out:prefix analysis_ -parser:protocol /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/analysis.xml -s *extracted*pdb -renumber_pdb 1;python /gscratch/stf/sunnylin/160624_flatland_finer_sampling/extract4docking/replace.py analysis_score.sc `pwd`;#' extraana0720.sh;
+cat extraana0720.sh >> analyreplace$now.run
+
+
+
+
 
 cp packdiruniq$now.list analyreplace$now.run;
 
@@ -63,9 +87,16 @@ cat analyreplace$now.run | parallel -j16 &
 
 #cat replace.run | parallel -j16 &
 
+
+
+
 cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
 touch anasc$now.txt;
-find `pwd` -name "analysis_score.sc" > analysislist$now;
+for j in `cat $now.dirlist`; do
+	cd $j;
+	find `pwd` -name "analysis_score.sc" > /gscratch/stf/sunnylin/160624_flatland_finer_sampling/analysislist$now;
+	cd /gscratch/stf/sunnylin/160624_flatland_finer_sampling/;
+done
 cp analysislist$now excelout$now.sh;
 sed -i -e 's/^/cat /' excelout$now.sh;
 sed -i 's#$# >> anasc$now.txt;#' excelout$now.sh;
